@@ -73,3 +73,20 @@ export function Tooltip({
     </RadixTooltip.Provider>
   )
 }
+import React from 'react';
+
+export interface TooltipProps {
+  children: React.ReactNode;
+  content: string;
+}
+
+export const Tooltip = ({ children, content }: TooltipProps) => {
+  return (
+    <div className="relative group">
+      {children}
+      <div className="absolute hidden group-hover:block bg-gray-800 text-white p-2 rounded-md text-sm -top-10 left-1/2 transform -translate-x-1/2">
+        {content}
+      </div>
+    </div>
+  );
+};
