@@ -15,23 +15,17 @@
 [37m      2 │ export * from [32m'./Button/Button'[37m;
         ╵               [32m~~~~~~~~~~~~~~~~~[0m
 
+[31m✘ [41;31m[[41;97mERROR[41;31m][0m [1mCould not resolve "./Tooltip/Tooltip"[0m
+
+    src/index.ts:3:14:
+[37m      3 │ export * from [32m'./Tooltip/Tooltip'[37m;
+        ╵               [32m~~~~~~~~~~~~~~~~~~~[0m
+
 [31m✘ [41;31m[[41;97mERROR[41;31m][0m [1mCould not resolve "./Button/Button"[0m
 
     src/index.ts:2:14:
 [37m      2 │ export * from [32m'./Button/Button'[37m;
         ╵               [32m~~~~~~~~~~~~~~~~~[0m
-
-[31m✘ [41;31m[[41;97mERROR[41;31m][0m [1mCould not resolve "./Tooltip/Tooltip"[0m
-
-    src/index.ts:3:14:
-[37m      3 │ export * from [32m'./Tooltip/Tooltip'[37m;
-        ╵               [32m~~~~~~~~~~~~~~~~~~~[0m
-
-[31m✘ [41;31m[[41;97mERROR[41;31m][0m [1mCould not resolve "./Tooltip/Tooltip"[0m
-
-    src/index.ts:3:14:
-[37m      3 │ export * from [32m'./Tooltip/Tooltip'[37m;
-        ╵               [32m~~~~~~~~~~~~~~~~~~~[0m
 
 [31mESM[39m [31mBuild failed[39m
 [31mError: Build failed with 2 errors:
@@ -47,6 +41,12 @@ src/index.ts:3:14: ERROR: Could not resolve "./Tooltip/Tooltip"
     at Socket.readFromStdout (/home/runner/cpturbostarter/node_modules/.pnpm/esbuild@0.24.2/node_modules/esbuild/lib/main.js:600:7)
     at Socket.emit (node:events:518:28)
     at addChunk (node:internal/streams/readable:561:12)[39m
+[31m✘ [41;31m[[41;97mERROR[41;31m][0m [1mCould not resolve "./Tooltip/Tooltip"[0m
+
+    src/index.ts:3:14:
+[37m      3 │ export * from [32m'./Tooltip/Tooltip'[37m;
+        ╵               [32m~~~~~~~~~~~~~~~~~~~[0m
+
 [31mCJS[39m [31mBuild failed[39m
 DTS Build start
 error TS2688: Cannot find type definition file for '@testing-library/jest-dom'.
