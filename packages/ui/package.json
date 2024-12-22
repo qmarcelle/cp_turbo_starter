@@ -7,7 +7,7 @@
   "scripts": {
     "lint": "eslint src/",
     "test": "jest",
-    "build": "tsup src/index.ts --format esm,cjs --dts --external react"
+    "build": "tsup src/index.ts --format esm,cjs --dts --external react --no-splitting"
   },
   "devDependencies": {
     "@types/react": "^18.2.0",
