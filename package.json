@@ -19,7 +19,7 @@
     "e2e:headless": "turbo run e2e:headless",
     "e2e:ui": "turbo run e2e:ui",
     "coupling-graph": "turbo run coupling-graph",
-    "clean": "turbo run clean && rm -rf node_modules",
+    "clean": "turbo run clean && del-cli node_modules",
     "typecheck": "turbo run typecheck",
     "ci": "turbo run build lint test"
   },

@@ -7,7 +7,8 @@
   "scripts": {
     "lint": "eslint src/",
     "test": "jest",
-    "build": "tsup src/index.ts --format esm,cjs --dts --external react --no-splitting"
+    "build": "tsup src/index.ts --format esm,cjs --dts --external react --no-splitting",
+  "clean": "del-cli dist/**"
   },
   "devDependencies": {
     "@types/react": "^18.2.0",

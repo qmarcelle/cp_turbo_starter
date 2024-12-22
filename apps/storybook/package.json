@@ -6,7 +6,8 @@
   "scripts": {
     "dev": "storybook dev -p 6006",
     "build": "storybook build",
-    "preview": "serve storybook-static"
+    "preview": "serve storybook-static",
+  "clean": "del-cli storybook-static/**"
   },
   "dependencies": {
     "@repo/ui": "workspace:*",

@@ -11,6 +11,7 @@
     "analyze": "ANALYZE=true next build",
     "test": "jest --passWithNoTests",
     "test:e2e": "playwright test",
+  "clean": "del-cli dist/** .next/**",
     "storybook": "storybook dev -p 6006",
     "build-storybook": "storybook build"
   },
