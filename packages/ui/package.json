@@ -7,7 +7,7 @@
   "scripts": {
     "lint": "eslint src/",
     "test": "jest",
-    "build": "tsup src/index.ts --format esm,cjs --dts --external react --no-splitting --inject-style",
+    "build": "tsup src/index.ts --format esm,cjs --dts --external react --no-splitting --inject-style --tsconfig tsconfig.json",
   "clean": "del-cli dist/**"
   },
   "devDependencies": {
