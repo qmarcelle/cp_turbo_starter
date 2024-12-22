@@ -2,14 +2,25 @@
 import { useEffect } from 'react';
 import { useAuthStore } from '../store/authStore';
 import type { AuthUser } from '../types';
+import { logger } from '../utils/logger';
 
+/**
+ * Custom hook for handling authentication state and operations
+ * @returns Authentication state and operations
+ */
 export const useAuth = () => {
   const { user, isAuthenticated, setUser, logout } = useAuthStore();
 
   useEffect(() => {
     const checkAuth = async () => {
       try {
+        logger.info('Checking authentication status');
         const response = await fetch('/__replauthuser');
+        
+        if (!response.ok) {
+          throw new Error(`Auth check failed with status: ${response.status}`);
+        }
+
         const userData = await response.json();
         if (userData) {
           const authUser: AuthUser = {
@@ -18,10 +29,11 @@ export const useAuth = () => {
             email: userData.email,
             image: userData.profileImage,
           };
+          logger.info('User authenticated successfully', { userId: authUser.id });
           setUser(authUser);
         }
       } catch (error) {
-        console.error('Auth check failed:', error);
+        logger.error('Authentication check failed:', { error: error.message });
         logout();
       }
     };
@@ -32,6 +44,9 @@ export const useAuth = () => {
   return {
     user,
     isAuthenticated,
-    logout,
+    logout: () => {
+      logger.info('User logged out', { userId: user?.id });
+      logout();
+    },
   };
 };
