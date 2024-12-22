@@ -1,0 +1,22 @@
+
+{
+  "name": "@repo/ui",
+  "version": "0.0.0",
+  "private": true,
+  "exports": {
+    "./button": "./src/Button/Button.tsx",
+    "./tooltip": "./src/Tooltip/Tooltip.tsx"
+  },
+  "scripts": {
+    "lint": "eslint src/",
+    "test": "jest",
+    "build": "tsup"
+  },
+  "devDependencies": {
+    "tsup": "^8.0.2",
+    "typescript": "^5.4.5"
+  },
+  "peerDependencies": {
+    "react": "^18.0.0"
+  }
+}
