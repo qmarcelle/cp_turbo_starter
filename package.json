@@ -22,16 +22,16 @@
     "coupling-graph": "turbo run coupling-graph"
   },
   "devDependencies": {
-    "@babel/core": "^7.23.3",
-    "@next/bundle-analyzer": "^14.2.3",
-    "@turbo/gen": "^1.12.4",
-    "@typescript-eslint/eslint-plugin": "^6.12.0",
-    "@typescript-eslint/parser": "^6.12.0",
-    "eslint": "8.54.0",
-    "eslint-config-prettier": "^9.0.0",
-    "prettier": "3.0.3",
-    "turbo": "^1.12.4",
-    "typescript": "5.4.5"
+    "@babel/core": "^7.26.0",
+    "@next/bundle-analyzer": "^14.2.21",
+    "@turbo/gen": "^1.13.4",
+    "@typescript-eslint/eslint-plugin": "^8.18.1",
+    "@typescript-eslint/parser": "^8.18.1",
+    "eslint": "^9.17.0",
+    "eslint-config-prettier": "^9.1.0",
+    "prettier": "^3.4.2",
+    "turbo": "^2.3.3",
+    "typescript": "^5.4.5"
   },
   "packageManager": "pnpm@8.15.4",
   "engines": {
