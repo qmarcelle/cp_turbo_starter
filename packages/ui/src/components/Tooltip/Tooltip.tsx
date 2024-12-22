@@ -1,92 +1,46 @@
-"use client"
 
-import * as RadixTooltip from "@radix-ui/react-tooltip"
-import { cva, VariantProps } from "class-variance-authority"
-import React from "react"
+import * as React from "react"
+import * as TooltipPrimitive from "@radix-ui/react-tooltip"
+import { cva, type VariantProps } from "class-variance-authority"
 import { twMerge } from "tailwind-merge"
 
-const tooltipContent = cva([], {
-  variants: {
-    intent: {
-      primary: ["rounded-0.5md", "bg-zinc-700", "font-open-sans", "text-white"],
+const tooltipVariants = cva(
+  "z-50 overflow-hidden rounded-md border bg-popover px-3 py-1.5 text-sm text-popover-foreground shadow-md animate-in fade-in-0 zoom-in-95 data-[state=closed]:animate-out data-[state=closed]:fade-out-0 data-[state=closed]:zoom-out-95 data-[side=bottom]:slide-in-from-top-2 data-[side=left]:slide-in-from-right-2 data-[side=right]:slide-in-from-left-2 data-[side=top]:slide-in-from-bottom-2",
+  {
+    variants: {
+      variant: {
+        default: "bg-white text-gray-900",
+        dark: "bg-gray-900 text-white",
+      },
     },
-    size: {
-      md: ["px-4", "py-2.5", "text-2xs"],
+    defaultVariants: {
+      variant: "default",
     },
-  },
-  defaultVariants: {
-    intent: "primary",
-    size: "md",
-  },
-})
+  }
+)
 
-const tooltipArrow = cva([], {
-  variants: {
-    intent: {
-      primary: ["fill-zinc-700"],
-    },
-    size: {
-      md: ["w-4", "h-2"],
-    },
-  },
-  defaultVariants: {
-    intent: "primary",
-    size: "md",
-  },
-})
-
-export interface TooltipProps extends VariantProps<typeof tooltipContent>, RadixTooltip.TooltipProps {
-  explainer: React.ReactElement | string
-  children: React.ReactElement
-  className?: string
-  withArrow?: boolean
-  side?: "top" | "right" | "bottom" | "left"
+export interface TooltipProps extends React.ComponentPropsWithoutRef<typeof TooltipPrimitive.Content>,
+  VariantProps<typeof tooltipVariants> {
+  content: React.ReactNode
 }
 
-export function Tooltip({
-  children,
-  explainer,
-  open,
-  defaultOpen,
-  onOpenChange,
-  intent,
-  size,
-  side = "top",
-  className,
-  withArrow,
-}: TooltipProps) {
-  return (
-    <RadixTooltip.Provider>
-      <RadixTooltip.Root open={open} defaultOpen={defaultOpen} onOpenChange={onOpenChange} delayDuration={200}>
-        <RadixTooltip.Trigger asChild>{children}</RadixTooltip.Trigger>
-        <RadixTooltip.Portal>
-          <RadixTooltip.Content
-            side={side}
-            sideOffset={5}
-            className={twMerge(tooltipContent({ intent, size, className }))}
-          >
-            {explainer}
-            {withArrow ? <RadixTooltip.Arrow className={twMerge(tooltipArrow({ intent, size, className }))} /> : null}
-          </RadixTooltip.Content>
-        </RadixTooltip.Portal>
-      </RadixTooltip.Root>
-    </RadixTooltip.Provider>
-  )
-}
-import React from 'react';
-
-export interface TooltipProps {
-  children: React.ReactNode;
-  content: string;
-}
-
-export const Tooltip = ({ children, content }: TooltipProps) => {
-  return (
-    <div className="relative group">
-      {children}
-      <div className="absolute hidden group-hover:block bg-gray-800 text-white p-2 rounded-md text-sm -top-10 left-1/2 transform -translate-x-1/2">
+export const Tooltip = React.forwardRef<
+  React.ElementRef<typeof TooltipPrimitive.Content>,
+  TooltipProps
+>(({ className, children, content, variant, ...props }, ref) => (
+  <TooltipPrimitive.Provider>
+    <TooltipPrimitive.Root>
+      <TooltipPrimitive.Trigger asChild>
+        {children}
+      </TooltipPrimitive.Trigger>
+      <TooltipPrimitive.Content
+        ref={ref}
+        className={twMerge(tooltipVariants({ variant, className }))}
+        {...props}
+      >
         {content}
-      </div>
-    </div>
-  );
-};
+      </TooltipPrimitive.Content>
+    </TooltipPrimitive.Root>
+  </TooltipPrimitive.Provider>
+))
+Tooltip.displayName = "Tooltip"
