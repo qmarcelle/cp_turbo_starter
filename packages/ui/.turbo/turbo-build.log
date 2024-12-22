@@ -9,82 +9,19 @@
 [34mCLI[39m Target: es5
 [34mESM[39m Build start
 [34mCJS[39m Build start
-[31m✘ [41;31m[[41;97mERROR[41;31m][0m [1mMultiple exports with the same name "Button"[0m
+[31m✘ [41;31m[[41;97mERROR[41;31m][0m [1mCould not resolve "class-variance-authority"[0m
 
-    src/components/Button/Button.tsx:56:13:
-[37m      56 │ export const [32mButton[37m = ({ children, onClick, variant = 'primary' }: ButtonProps) => {
-         ╵              [32m~~~~~~[0m
+    src/components/Button/Button.tsx:2:39:
+[37m      2 │ import { cva, type VariantProps } from [32m"class-variance-authority"[37m
+        ╵                                        [32m~~~~~~~~~~~~~~~~~~~~~~~~~~[0m
 
-  The name "Button" was originally exported here:
-
-    src/components/Button/Button.tsx:41:16:
-[37m      41 │ export function [32mButton[37m({ className, intent, size, underline, ...props }: ButtonProps) {
-         ╵                 [32m~~~~~~[0m
-
-[31m✘ [41;31m[[41;97mERROR[41;31m][0m [1mThe symbol "Button" has already been declared[0m
-
-    src/components/Button/Button.tsx:56:13:
-[37m      56 │ export const [32mButton[37m = ({ children, onClick, variant = 'primary' }: ButtonProps) => {
-         ╵              [32m~~~~~~[0m
-
-  The symbol "Button" was originally declared here:
-
-    src/components/Button/Button.tsx:41:16:
-[37m      41 │ export function [32mButton[37m({ className, intent, size, underline, ...props }: ButtonProps) {
-         ╵                 [32m~~~~~~[0m
-
-[31m✘ [41;31m[[41;97mERROR[41;31m][0m [1mMultiple exports with the same name "Tooltip"[0m
-
-    src/components/Tooltip/Tooltip.tsx:83:13:
-[37m      83 │ export const [32mTooltip[37m = ({ children, content }: TooltipProps) => {
-         ╵              [32m~~~~~~~[0m
-
-  The name "Tooltip" was originally exported here:
-
-    src/components/Tooltip/Tooltip.tsx:46:16:
-[37m      46 │ export function [32mTooltip[37m({
-         ╵                 [32m~~~~~~~[0m
-
-[31m✘ [41;31m[[41;97mERROR[41;31m][0m [1mThe symbol "Tooltip" has already been declared[0m
-
-    src/components/Tooltip/Tooltip.tsx:83:13:
-[37m      83 │ export const [32mTooltip[37m = ({ children, content }: TooltipProps) => {
-         ╵              [32m~~~~~~~[0m
-
-  The symbol "Tooltip" was originally declared here:
-
-    src/components/Tooltip/Tooltip.tsx:46:16:
-[37m      46 │ export function [32mTooltip[37m({
-         ╵                 [32m~~~~~~~[0m
-
-[31m✘ [41;31m[[41;97mERROR[41;31m][0m [1mMultiple exports with the same name "Tooltip"[0m
-
-    src/components/Tooltip/Tooltip.tsx:83:13:
-[37m      83 │ export const [32mTooltip[37m = ({ children, content }: TooltipProps) => {
-         ╵              [32m~~~~~~~[0m
-
-  The name "Tooltip" was originally exported here:
-
-    src/components/Tooltip/Tooltip.tsx:46:16:
-[37m      46 │ export function [32mTooltip[37m({
-         ╵                 [32m~~~~~~~[0m
-
-[31m✘ [41;31m[[41;97mERROR[41;31m][0m [1mThe symbol "Tooltip" has already been declared[0m
-
-    src/components/Tooltip/Tooltip.tsx:83:13:
-[37m      83 │ export const [32mTooltip[37m = ({ children, content }: TooltipProps) => {
-         ╵              [32m~~~~~~~[0m
-
-  The symbol "Tooltip" was originally declared here:
-
-    src/components/Tooltip/Tooltip.tsx:46:16:
-[37m      46 │ export function [32mTooltip[37m({
-         ╵                 [32m~~~~~~~[0m
+  You can mark the path "class-variance-authority" as external to exclude it from the bundle, which
+  will remove this error and leave the unresolved path in the bundle.
 
 [31m✘ [41;31m[[41;97mERROR[41;31m][0m [1mCould not resolve "class-variance-authority"[0m
 
-    src/components/Button/Button.tsx:1:39:
-[37m      1 │ import { cva, type VariantProps } from [32m"class-variance-authority"[37m
+    src/components/Button/Button.tsx:2:39:
+[37m      2 │ import { cva, type VariantProps } from [32m"class-variance-authority"[37m
         ╵                                        [32m~~~~~~~~~~~~~~~~~~~~~~~~~~[0m
 
   You can mark the path "class-variance-authority" as external to exclude it from the bundle, which
@@ -92,68 +29,35 @@
 
 [31m✘ [41;31m[[41;97mERROR[41;31m][0m [1mCould not resolve "@radix-ui/react-tooltip"[0m
 
-    src/components/Tooltip/Tooltip.tsx:3:30:
-[37m      3 │ import * as RadixTooltip from [32m"@radix-ui/react-tooltip"[37m
-        ╵                               [32m~~~~~~~~~~~~~~~~~~~~~~~~~[0m
+    src/components/Tooltip/Tooltip.tsx:3:34:
+[37m      3 │ import * as TooltipPrimitive from [32m"@radix-ui/react-tooltip"[37m
+        ╵                                   [32m~~~~~~~~~~~~~~~~~~~~~~~~~[0m
 
   You can mark the path "@radix-ui/react-tooltip" as external to exclude it from the bundle, which
   will remove this error and leave the unresolved path in the bundle.
 
-[31m✘ [41;31m[[41;97mERROR[41;31m][0m [1mMultiple exports with the same name "Button"[0m
+[31m✘ [41;31m[[41;97mERROR[41;31m][0m [1mCould not resolve "@radix-ui/react-tooltip"[0m
 
-    src/components/Button/Button.tsx:56:13:
-[37m      56 │ export const [32mButton[37m = ({ children, onClick, variant = 'primary' }: ButtonProps) => {
-         ╵              [32m~~~~~~[0m
+    src/components/Tooltip/Tooltip.tsx:3:34:
+[37m      3 │ import * as TooltipPrimitive from [32m"@radix-ui/react-tooltip"[37m
+        ╵                                   [32m~~~~~~~~~~~~~~~~~~~~~~~~~[0m
 
-  The name "Button" was originally exported here:
-
-    src/components/Button/Button.tsx:41:16:
-[37m      41 │ export function [32mButton[37m({ className, intent, size, underline, ...props }: ButtonProps) {
-         ╵                 [32m~~~~~~[0m
-
-[31m✘ [41;31m[[41;97mERROR[41;31m][0m [1mThe symbol "Button" has already been declared[0m
-
-    src/components/Button/Button.tsx:56:13:
-[37m      56 │ export const [32mButton[37m = ({ children, onClick, variant = 'primary' }: ButtonProps) => {
-         ╵              [32m~~~~~~[0m
-
-  The symbol "Button" was originally declared here:
-
-    src/components/Button/Button.tsx:41:16:
-[37m      41 │ export function [32mButton[37m({ className, intent, size, underline, ...props }: ButtonProps) {
-         ╵                 [32m~~~~~~[0m
-
-[31m✘ [41;31m[[41;97mERROR[41;31m][0m [1mCould not resolve "class-variance-authority"[0m
-
-    src/components/Tooltip/Tooltip.tsx:4:34:
-[37m      4 │ import { cva, VariantProps } from [32m"class-variance-authority"[37m
-        ╵                                   [32m~~~~~~~~~~~~~~~~~~~~~~~~~~[0m
-
-  You can mark the path "class-variance-authority" as external to exclude it from the bundle, which
+  You can mark the path "@radix-ui/react-tooltip" as external to exclude it from the bundle, which
   will remove this error and leave the unresolved path in the bundle.
 
 [31m✘ [41;31m[[41;97mERROR[41;31m][0m [1mCould not resolve "tailwind-merge"[0m
 
-    src/components/Button/Button.tsx:3:24:
-[37m      3 │ import { twMerge } from [32m"tailwind-merge"[37m
+    src/components/Button/Button.tsx:4:24:
+[37m      4 │ import { twMerge } from [32m"tailwind-merge"[37m
         ╵                         [32m~~~~~~~~~~~~~~~~[0m
 
   You can mark the path "tailwind-merge" as external to exclude it from the bundle, which will
   remove this error and leave the unresolved path in the bundle.
 
-[31m✘ [41;31m[[41;97mERROR[41;31m][0m [1mCould not resolve "@radix-ui/react-tooltip"[0m
-
-    src/components/Tooltip/Tooltip.tsx:3:30:
-[37m      3 │ import * as RadixTooltip from [32m"@radix-ui/react-tooltip"[37m
-        ╵                               [32m~~~~~~~~~~~~~~~~~~~~~~~~~[0m
-
-  You can mark the path "@radix-ui/react-tooltip" as external to exclude it from the bundle, which
-  will remove this error and leave the unresolved path in the bundle.
-
 [31m✘ [41;31m[[41;97mERROR[41;31m][0m [1mCould not resolve "class-variance-authority"[0m
 
-    src/components/Button/Button.tsx:1:39:
-[37m      1 │ import { cva, type VariantProps } from [32m"class-variance-authority"[37m
+    src/components/Tooltip/Tooltip.tsx:4:39:
+[37m      4 │ import { cva, type VariantProps } from [32m"class-variance-authority"[37m
         ╵                                        [32m~~~~~~~~~~~~~~~~~~~~~~~~~~[0m
 
   You can mark the path "class-variance-authority" as external to exclude it from the bundle, which
@@ -161,17 +65,8 @@
 
 [31m✘ [41;31m[[41;97mERROR[41;31m][0m [1mCould not resolve "tailwind-merge"[0m
 
-    src/components/Tooltip/Tooltip.tsx:6:24:
-[37m      6 │ import { twMerge } from [32m"tailwind-merge"[37m
-        ╵                         [32m~~~~~~~~~~~~~~~~[0m
-
-  You can mark the path "tailwind-merge" as external to exclude it from the bundle, which will
-  remove this error and leave the unresolved path in the bundle.
-
-[31m✘ [41;31m[[41;97mERROR[41;31m][0m [1mCould not resolve "tailwind-merge"[0m
-
-    src/components/Button/Button.tsx:3:24:
-[37m      3 │ import { twMerge } from [32m"tailwind-merge"[37m
+    src/components/Button/Button.tsx:4:24:
+[37m      4 │ import { twMerge } from [32m"tailwind-merge"[37m
         ╵                         [32m~~~~~~~~~~~~~~~~[0m
 
   You can mark the path "tailwind-merge" as external to exclude it from the bundle, which will
@@ -179,17 +74,26 @@
 
 [31m✘ [41;31m[[41;97mERROR[41;31m][0m [1mCould not resolve "class-variance-authority"[0m
 
-    src/components/Tooltip/Tooltip.tsx:4:34:
-[37m      4 │ import { cva, VariantProps } from [32m"class-variance-authority"[37m
-        ╵                                   [32m~~~~~~~~~~~~~~~~~~~~~~~~~~[0m
+    src/components/Tooltip/Tooltip.tsx:4:39:
+[37m      4 │ import { cva, type VariantProps } from [32m"class-variance-authority"[37m
+        ╵                                        [32m~~~~~~~~~~~~~~~~~~~~~~~~~~[0m
 
   You can mark the path "class-variance-authority" as external to exclude it from the bundle, which
   will remove this error and leave the unresolved path in the bundle.
 
 [31m✘ [41;31m[[41;97mERROR[41;31m][0m [1mCould not resolve "tailwind-merge"[0m
 
-    src/components/Tooltip/Tooltip.tsx:6:24:
-[37m      6 │ import { twMerge } from [32m"tailwind-merge"[37m
+    src/components/Tooltip/Tooltip.tsx:5:24:
+[37m      5 │ import { twMerge } from [32m"tailwind-merge"[37m
+        ╵                         [32m~~~~~~~~~~~~~~~~[0m
+
+  You can mark the path "tailwind-merge" as external to exclude it from the bundle, which will
+  remove this error and leave the unresolved path in the bundle.
+
+[31m✘ [41;31m[[41;97mERROR[41;31m][0m [1mCould not resolve "tailwind-merge"[0m
+
+    src/components/Tooltip/Tooltip.tsx:5:24:
+[37m      5 │ import { twMerge } from [32m"tailwind-merge"[37m
         ╵                         [32m~~~~~~~~~~~~~~~~[0m
 
   You can mark the path "tailwind-merge" as external to exclude it from the bundle, which will
@@ -200,15 +104,13 @@
 [1m[33mwarn[39m[22m - Configure your content sources or your generated CSS will be missing styles.
 [1m[33mwarn[39m[22m - https://tailwindcss.com/docs/content-configuration
 DTS Build start
-[31mESM[39m [31mBuild failed[39m
 [31mCJS[39m [31mBuild failed[39m
-[31mError: Build failed with 9 errors:
-src/components/Button/Button.tsx:1:39: ERROR: Could not resolve "class-variance-authority"
-src/components/Button/Button.tsx:3:24: ERROR: Could not resolve "tailwind-merge"
-src/components/Button/Button.tsx:56:13: ERROR: Multiple exports with the same name "Button"
-src/components/Button/Button.tsx:56:13: ERROR: The symbol "Button" has already been declared
-src/components/Tooltip/Tooltip.tsx:3:30: ERROR: Could not resolve "@radix-ui/react-tooltip"
-...
+[31mError: Build failed with 5 errors:
+src/components/Button/Button.tsx:2:39: ERROR: Could not resolve "class-variance-authority"
+src/components/Button/Button.tsx:4:24: ERROR: Could not resolve "tailwind-merge"
+src/components/Tooltip/Tooltip.tsx:3:34: ERROR: Could not resolve "@radix-ui/react-tooltip"
+src/components/Tooltip/Tooltip.tsx:4:39: ERROR: Could not resolve "class-variance-authority"
+src/components/Tooltip/Tooltip.tsx:5:24: ERROR: Could not resolve "tailwind-merge"
     at failureErrorWithLog (/home/runner/cpturbostarter/node_modules/.pnpm/esbuild@0.24.2/node_modules/esbuild/lib/main.js:1476:15)
     at /home/runner/cpturbostarter/node_modules/.pnpm/esbuild@0.24.2/node_modules/esbuild/lib/main.js:945:25
     at runOnEndCallbacks (/home/runner/cpturbostarter/node_modules/.pnpm/esbuild@0.24.2/node_modules/esbuild/lib/main.js:1316:45)
@@ -219,6 +121,7 @@ src/components/Tooltip/Tooltip.tsx:3:30: ERROR: Could not resolve "@radix-ui/rea
     at Socket.readFromStdout (/home/runner/cpturbostarter/node_modules/.pnpm/esbuild@0.24.2/node_modules/esbuild/lib/main.js:600:7)
     at Socket.emit (node:events:518:28)
     at addChunk (node:internal/streams/readable:561:12)[39m
+[31mESM[39m [31mBuild failed[39m
 error TS2688: Cannot find type definition file for '@testing-library/jest-dom'.
   The file is in the program because:
     Entry point of type library '@testing-library/jest-dom' specified in compilerOptions
