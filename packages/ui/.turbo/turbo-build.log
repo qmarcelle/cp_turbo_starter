@@ -1,0 +1,66 @@
+
+
+> @repo/ui@0.0.0 build /home/runner/cpturbostarter/packages/ui
+> tsup src/index.ts --format esm,cjs --dts --external react
+
+[34mCLI[39m Building entry: src/index.ts
+[34mCLI[39m Using tsconfig: ../../tsconfig.json
+[34mCLI[39m tsup v8.3.5
+[34mCLI[39m Target: es5
+[34mESM[39m Build start
+[34mCJS[39m Build start
+[31m✘ [41;31m[[41;97mERROR[41;31m][0m [1mCould not resolve "./Button/Button"[0m
+
+    src/index.ts:2:14:
+[37m      2 │ export * from [32m'./Button/Button'[37m;
+        ╵               [32m~~~~~~~~~~~~~~~~~[0m
+
+[31m✘ [41;31m[[41;97mERROR[41;31m][0m [1mCould not resolve "./Button/Button"[0m
+
+    src/index.ts:2:14:
+[37m      2 │ export * from [32m'./Button/Button'[37m;
+        ╵               [32m~~~~~~~~~~~~~~~~~[0m
+
+[31m✘ [41;31m[[41;97mERROR[41;31m][0m [1mCould not resolve "./Tooltip/Tooltip"[0m
+
+    src/index.ts:3:14:
+[37m      3 │ export * from [32m'./Tooltip/Tooltip'[37m;
+        ╵               [32m~~~~~~~~~~~~~~~~~~~[0m
+
+[31m✘ [41;31m[[41;97mERROR[41;31m][0m [1mCould not resolve "./Tooltip/Tooltip"[0m
+
+    src/index.ts:3:14:
+[37m      3 │ export * from [32m'./Tooltip/Tooltip'[37m;
+        ╵               [32m~~~~~~~~~~~~~~~~~~~[0m
+
+[31mESM[39m [31mBuild failed[39m
+[31mError: Build failed with 2 errors:
+src/index.ts:2:14: ERROR: Could not resolve "./Button/Button"
+src/index.ts:3:14: ERROR: Could not resolve "./Tooltip/Tooltip"
+    at failureErrorWithLog (/home/runner/cpturbostarter/node_modules/.pnpm/esbuild@0.24.2/node_modules/esbuild/lib/main.js:1476:15)
+    at /home/runner/cpturbostarter/node_modules/.pnpm/esbuild@0.24.2/node_modules/esbuild/lib/main.js:945:25
+    at runOnEndCallbacks (/home/runner/cpturbostarter/node_modules/.pnpm/esbuild@0.24.2/node_modules/esbuild/lib/main.js:1316:45)
+    at buildResponseToResult (/home/runner/cpturbostarter/node_modules/.pnpm/esbuild@0.24.2/node_modules/esbuild/lib/main.js:943:7)
+    at /home/runner/cpturbostarter/node_modules/.pnpm/esbuild@0.24.2/node_modules/esbuild/lib/main.js:970:16
+    at responseCallbacks.<computed> (/home/runner/cpturbostarter/node_modules/.pnpm/esbuild@0.24.2/node_modules/esbuild/lib/main.js:622:9)
+    at handleIncomingPacket (/home/runner/cpturbostarter/node_modules/.pnpm/esbuild@0.24.2/node_modules/esbuild/lib/main.js:677:12)
+    at Socket.readFromStdout (/home/runner/cpturbostarter/node_modules/.pnpm/esbuild@0.24.2/node_modules/esbuild/lib/main.js:600:7)
+    at Socket.emit (node:events:518:28)
+    at addChunk (node:internal/streams/readable:561:12)[39m
+[31mCJS[39m [31mBuild failed[39m
+DTS Build start
+error TS2688: Cannot find type definition file for '@testing-library/jest-dom'.
+  The file is in the program because:
+    Entry point of type library '@testing-library/jest-dom' specified in compilerOptions
+error TS2688: Cannot find type definition file for 'jest'.
+  The file is in the program because:
+    Entry point of type library 'jest' specified in compilerOptions
+error TS2688: Cannot find type definition file for 'node'.
+  The file is in the program because:
+    Entry point of type library 'node' specified in compilerOptions
+error TS5074: Option '--incremental' can only be specified using tsconfig, emitting to single file or when option '--tsBuildInfoFile' is specified.
+src/index.ts(2,15): error TS2307: Cannot find module './Button/Button' or its corresponding type declarations.
+src/index.ts(3,15): error TS2307: Cannot find module './Tooltip/Tooltip' or its corresponding type declarations.
+
+DTS Build error
+[41m[30m ELIFECYCLE [39m[49m [31mCommand failed with exit code 1.[39m
