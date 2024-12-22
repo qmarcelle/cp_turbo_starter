@@ -1,7 +1,7 @@
 
 
 > @repo/ui@0.0.0 build /home/runner/cpturbostarter/packages/ui
-> tsup src/index.ts --format esm,cjs --dts --external react
+> tsup src/index.ts --format esm,cjs --dts --external react --no-splitting
 
 [34mCLI[39m Building entry: src/index.ts
 [34mCLI[39m Using tsconfig: ../../tsconfig.json
@@ -9,129 +9,21 @@
 [34mCLI[39m Target: es5
 [34mESM[39m Build start
 [34mCJS[39m Build start
-[31m✘ [41;31m[[41;97mERROR[41;31m][0m [1mCould not resolve "class-variance-authority"[0m
-
-    src/components/Button/Button.tsx:2:39:
-[37m      2 │ import { cva, type VariantProps } from [32m"class-variance-authority"[37m
-        ╵                                        [32m~~~~~~~~~~~~~~~~~~~~~~~~~~[0m
-
-  You can mark the path "class-variance-authority" as external to exclude it from the bundle, which
-  will remove this error and leave the unresolved path in the bundle.
-
-[31m✘ [41;31m[[41;97mERROR[41;31m][0m [1mCould not resolve "@radix-ui/react-tooltip"[0m
-
-    src/components/Tooltip/Tooltip.tsx:3:34:
-[37m      3 │ import * as TooltipPrimitive from [32m"@radix-ui/react-tooltip"[37m
-        ╵                                   [32m~~~~~~~~~~~~~~~~~~~~~~~~~[0m
-
-  You can mark the path "@radix-ui/react-tooltip" as external to exclude it from the bundle, which
-  will remove this error and leave the unresolved path in the bundle.
-
-[31m✘ [41;31m[[41;97mERROR[41;31m][0m [1mCould not resolve "tailwind-merge"[0m
-
-    src/components/Button/Button.tsx:4:24:
-[37m      4 │ import { twMerge } from [32m"tailwind-merge"[37m
-        ╵                         [32m~~~~~~~~~~~~~~~~[0m
-
-  You can mark the path "tailwind-merge" as external to exclude it from the bundle, which will
-  remove this error and leave the unresolved path in the bundle.
-
-[31m✘ [41;31m[[41;97mERROR[41;31m][0m [1mCould not resolve "class-variance-authority"[0m
-
-    src/components/Tooltip/Tooltip.tsx:4:39:
-[37m      4 │ import { cva, type VariantProps } from [32m"class-variance-authority"[37m
-        ╵                                        [32m~~~~~~~~~~~~~~~~~~~~~~~~~~[0m
-
-  You can mark the path "class-variance-authority" as external to exclude it from the bundle, which
-  will remove this error and leave the unresolved path in the bundle.
-
-[31m✘ [41;31m[[41;97mERROR[41;31m][0m [1mCould not resolve "class-variance-authority"[0m
-
-    src/components/Button/Button.tsx:2:39:
-[37m      2 │ import { cva, type VariantProps } from [32m"class-variance-authority"[37m
-        ╵                                        [32m~~~~~~~~~~~~~~~~~~~~~~~~~~[0m
-
-  You can mark the path "class-variance-authority" as external to exclude it from the bundle, which
-  will remove this error and leave the unresolved path in the bundle.
-
-[31m✘ [41;31m[[41;97mERROR[41;31m][0m [1mCould not resolve "@radix-ui/react-tooltip"[0m
-
-    src/components/Tooltip/Tooltip.tsx:3:34:
-[37m      3 │ import * as TooltipPrimitive from [32m"@radix-ui/react-tooltip"[37m
-        ╵                                   [32m~~~~~~~~~~~~~~~~~~~~~~~~~[0m
-
-  You can mark the path "@radix-ui/react-tooltip" as external to exclude it from the bundle, which
-  will remove this error and leave the unresolved path in the bundle.
-
-[31m✘ [41;31m[[41;97mERROR[41;31m][0m [1mCould not resolve "tailwind-merge"[0m
-
-    src/components/Tooltip/Tooltip.tsx:5:24:
-[37m      5 │ import { twMerge } from [32m"tailwind-merge"[37m
-        ╵                         [32m~~~~~~~~~~~~~~~~[0m
-
-  You can mark the path "tailwind-merge" as external to exclude it from the bundle, which will
-  remove this error and leave the unresolved path in the bundle.
-
-[31m✘ [41;31m[[41;97mERROR[41;31m][0m [1mCould not resolve "class-variance-authority"[0m
-
-    src/components/Tooltip/Tooltip.tsx:4:39:
-[37m      4 │ import { cva, type VariantProps } from [32m"class-variance-authority"[37m
-        ╵                                        [32m~~~~~~~~~~~~~~~~~~~~~~~~~~[0m
-
-  You can mark the path "class-variance-authority" as external to exclude it from the bundle, which
-  will remove this error and leave the unresolved path in the bundle.
-
-[31m✘ [41;31m[[41;97mERROR[41;31m][0m [1mCould not resolve "tailwind-merge"[0m
-
-    src/components/Button/Button.tsx:4:24:
-[37m      4 │ import { twMerge } from [32m"tailwind-merge"[37m
-        ╵                         [32m~~~~~~~~~~~~~~~~[0m
-
-  You can mark the path "tailwind-merge" as external to exclude it from the bundle, which will
-  remove this error and leave the unresolved path in the bundle.
-
-[31m✘ [41;31m[[41;97mERROR[41;31m][0m [1mCould not resolve "tailwind-merge"[0m
-
-    src/components/Tooltip/Tooltip.tsx:5:24:
-[37m      5 │ import { twMerge } from [32m"tailwind-merge"[37m
-        ╵                         [32m~~~~~~~~~~~~~~~~[0m
-
-  You can mark the path "tailwind-merge" as external to exclude it from the bundle, which will
-  remove this error and leave the unresolved path in the bundle.
-
-
-[1m[33mwarn[39m[22m - The `content` option in your Tailwind CSS configuration is missing or empty.
-[1m[33mwarn[39m[22m - Configure your content sources or your generated CSS will be missing styles.
-[1m[33mwarn[39m[22m - https://tailwindcss.com/docs/content-configuration
 DTS Build start
-[31mESM[39m [31mBuild failed[39m
-[31mCJS[39m [31mBuild failed[39m
-[31mError: Build failed with 5 errors:
-src/components/Button/Button.tsx:2:39: ERROR: Could not resolve "class-variance-authority"
-src/components/Button/Button.tsx:4:24: ERROR: Could not resolve "tailwind-merge"
-src/components/Tooltip/Tooltip.tsx:3:34: ERROR: Could not resolve "@radix-ui/react-tooltip"
-src/components/Tooltip/Tooltip.tsx:4:39: ERROR: Could not resolve "class-variance-authority"
-src/components/Tooltip/Tooltip.tsx:5:24: ERROR: Could not resolve "tailwind-merge"
-    at failureErrorWithLog (/home/runner/cpturbostarter/node_modules/.pnpm/esbuild@0.24.2/node_modules/esbuild/lib/main.js:1476:15)
-    at /home/runner/cpturbostarter/node_modules/.pnpm/esbuild@0.24.2/node_modules/esbuild/lib/main.js:945:25
-    at runOnEndCallbacks (/home/runner/cpturbostarter/node_modules/.pnpm/esbuild@0.24.2/node_modules/esbuild/lib/main.js:1316:45)
-    at buildResponseToResult (/home/runner/cpturbostarter/node_modules/.pnpm/esbuild@0.24.2/node_modules/esbuild/lib/main.js:943:7)
-    at /home/runner/cpturbostarter/node_modules/.pnpm/esbuild@0.24.2/node_modules/esbuild/lib/main.js:970:16
-    at responseCallbacks.<computed> (/home/runner/cpturbostarter/node_modules/.pnpm/esbuild@0.24.2/node_modules/esbuild/lib/main.js:622:9)
-    at handleIncomingPacket (/home/runner/cpturbostarter/node_modules/.pnpm/esbuild@0.24.2/node_modules/esbuild/lib/main.js:677:12)
-    at Socket.readFromStdout (/home/runner/cpturbostarter/node_modules/.pnpm/esbuild@0.24.2/node_modules/esbuild/lib/main.js:600:7)
-    at Socket.emit (node:events:518:28)
-    at addChunk (node:internal/streams/readable:561:12)[39m
-error TS2688: Cannot find type definition file for '@testing-library/jest-dom'.
-  The file is in the program because:
-    Entry point of type library '@testing-library/jest-dom' specified in compilerOptions
-error TS2688: Cannot find type definition file for 'jest'.
-  The file is in the program because:
-    Entry point of type library 'jest' specified in compilerOptions
-error TS2688: Cannot find type definition file for 'node'.
-  The file is in the program because:
-    Entry point of type library 'node' specified in compilerOptions
+[32mESM[39m [1mdist/index.css [22m[32m8.17 KB[39m
+[32mESM[39m [1mdist/index.mjs [22m[32m1.74 MB[39m
+[32mESM[39m ⚡️ Build success in 1449ms
+[32mCJS[39m [1mdist/index.css [22m[32m8.17 KB[39m
+[32mCJS[39m [1mdist/index.js  [22m[32m1.74 MB[39m
+[32mCJS[39m ⚡️ Build success in 1474ms
 error TS5074: Option '--incremental' can only be specified using tsconfig, emitting to single file or when option '--tsBuildInfoFile' is specified.
 src/index.ts(4,15): error TS2307: Cannot find module './styles/tailwind.css' or its corresponding type declarations.
 
+[31mError: error occurred in dts build
+    at Worker.<anonymous> (/home/runner/cpturbostarter/node_modules/.pnpm/tsup@8.3.5_@swc+core@1.10.1_@swc+helpers@0.5.5__jiti@1.21.7_postcss@8.4.49_typescript@5.4.5_yaml@2.6.1/node_modules/tsup/dist/index.js:1541:26)
+    at Worker.emit (node:events:518:28)
+    at MessagePort.<anonymous> (node:internal/worker:263:53)
+    at [nodejs.internal.kHybridDispatch] (node:internal/event_target:820:20)
+    at MessagePort.<anonymous> (node:internal/per_context/messageport:23:28)[39m
+DTS Build error
 [41m[30m ELIFECYCLE [39m[49m [31mCommand failed with exit code 1.[39m
