@@ -1,0 +1,19 @@
+{
+  "auth": {
+    "LoginRequest": {
+      "required": ["username", "password"],
+      "optional": ["policyId", "appId"],
+      "validation": {
+        "username": "string && minLength(3)",
+        "password": "string && minLength(8)"
+      }
+    },
+    "LoginResponse": {
+      "required": ["message"],
+      "conditional": {
+        "mfaDeviceList": "message === 'OTP_REQUIRED'",
+        "accessToken": "message === 'COMPLETED'"
+      }
+    }
+  }
+}

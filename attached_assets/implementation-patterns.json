@@ -1,0 +1,35 @@
+{
+  "auth": {
+    "loginFlow": {
+      "requiredSteps": [
+        "logAttempt",
+        "validateInput",
+        "callESApi",
+        "handleResponse",
+        "setSession",
+        "handleErrors"
+      ],
+      "requiredImports": [
+        "@/utils/api/esApi",
+        "@/utils/logging/auth-logger",
+        "@/utils/encryption"
+      ],
+      "errorHandling": {
+        "required": true,
+        "patterns": [
+          "correlationId tracking",
+          "error code mapping",
+          "user feedback"
+        ]
+      }
+    },
+    "mfaFlow": {
+      "requiredSteps": [
+        "deviceSelection",
+        "otpGeneration",
+        "otpValidation",
+        "sessionUpdate"
+      ]
+    }
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "auth": {
+    "loginAction": "export async function callLogin\(",
+    "mfaAction": "export async function callSubmitMfaOtp\(",
+    "errorHandler": "export function handleLoginError\(",
+    "tokenManagement": "export async function refreshToken\("
+  },
+  "components": {
+    "loginForm": "export function LoginForm\(",
+    "mfaFlow": "export function MFAFlow\(",
+    "emailVerification": "export function EmailVerification\("
+  },
+  "api": {
+    "esApi": "export const esApi",
+    "errorMapping": "export const errorCodeMap"
+  }
+}

@@ -1,0 +1,32 @@
+{
+  "loginAction": {
+    "structure": {
+      "pre": [
+        "const correlationId = generateCorrelationId(request.username);",
+        "authLogger.logLoginAttempt(request.username, correlationId);"
+      ],
+      "validation": [
+        "if (!request.username || !request.password) {",
+        "  return { status: LoginStatus.VALIDATION_FAILURE };"
+        "}"
+      ],
+      "apiCall": [
+        "const resp = await esApi.post<ESResponse<LoginResponse>>(",
+        "  '/mfAuthentication/loginAuthentication',",
+        "  buildRequestPayload(request)",
+        ");"
+      ],
+      "responseHandling": [
+        "const status = determineLoginStatus(resp.data.data?.message);",
+        "if (status === LoginStatus.LOGIN_OK) {",
+        "  await setWebsphereRedirectCookie(resp.data.data);",
+        "}"
+      ],
+      "errorHandling": [
+        "} catch (error) {",
+        "  return handleLoginError(error, correlationId);",
+        "}"
+      ]
+    }
+  }
+}

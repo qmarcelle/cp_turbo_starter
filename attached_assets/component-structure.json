@@ -1,0 +1,15 @@
+{
+  "LoginForm": {
+    "requiredProps": ["onSubmit", "onMFARequired", "onEmailVerificationRequired"],
+    "requiredState": ["isLoading", "error"],
+    "requiredHandlers": ["handleSubmit", "handleInputChange"],
+    "accessibility": {
+      "required": ["aria-labels", "error-announcements", "keyboard-navigation"]
+    }
+  },
+  "MFAFlow": {
+    "requiredProps": ["devices", "onVerification"],
+    "requiredComponents": ["DeviceSelection", "OTPInput"],
+    "requiredState": ["selectedDevice", "otpValue", "error"]
+  }
+}

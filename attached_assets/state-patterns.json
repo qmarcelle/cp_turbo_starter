@@ -1,0 +1,11 @@
+{
+  "authStore": {
+    "requiredSlices": ["user", "mfa", "errors"],
+    "requiredActions": ["setUser", "setMFAStatus", "clearErrors"],
+    "persistence": {
+      "required": true,
+      "mechanism": "localStorage",
+      "encryption": true
+    }
+  }
+}

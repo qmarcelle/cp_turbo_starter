@@ -1,0 +1,19 @@
+{
+  "auth": {
+    "loginAction": {
+      "requiredTests": [
+        "successful login",
+        "invalid credentials",
+        "MFA required",
+        "email verification required",
+        "network error",
+        "rate limiting"
+      ],
+      "mockRequirements": {
+        "esApi": ["post"],
+        "authLogger": ["logLoginAttempt", "logError"],
+        "encryption": ["encrypt"]
+      }
+    }
+  }
+}
