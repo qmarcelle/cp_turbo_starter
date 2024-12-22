@@ -1,4 +1,3 @@
-
 import * as React from "react"
 import * as TooltipPrimitive from "@radix-ui/react-tooltip"
 import { cva, type VariantProps } from "class-variance-authority"
@@ -19,9 +18,12 @@ const tooltipVariants = cva(
   }
 )
 
-export interface TooltipProps extends React.ComponentPropsWithoutRef<typeof TooltipPrimitive.Content>,
-  VariantProps<typeof tooltipVariants> {
-  content: React.ReactNode
+export interface TooltipProps {
+  content: React.ReactNode;
+  children: React.ReactNode;
+  className?: string;
+  side?: 'top' | 'right' | 'bottom' | 'left';
+  align?: 'start' | 'center' | 'end';
 }
 
 export const Tooltip = React.forwardRef<
