@@ -1,5 +1,5 @@
 
-import { createEnv } from "@t3-oss/env-nextjs";
+import { createEnv } from "@t3-oss/env-nextjs/dist/index.js";
 import { z } from "zod";
 
 export const env = createEnv({
