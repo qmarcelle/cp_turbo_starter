@@ -1,0 +1,32 @@
+@repo/ui:build: > tsup src/index.ts --format esm,cjs --dts --external react --no-splitting --inject-style --tsconfig tsconfig.json
+@repo/ui:build: 
+@repo/ui:build: CLI Building entry: src/index.ts
+@repo/ui:build: CLI Using tsconfig: tsconfig.json
+@repo/ui:build: CLI tsup v8.3.5
+@repo/ui:build: CLI Target: es5
+@repo/ui:build: ESM Build start
+@repo/ui:build: CJS Build start
+@repo/ui:build: DTS Build start
+@repo/ui:build: ESM dist/index.mjs 1.75 MB
+@repo/ui:build: ESM ⚡️ Build success in 1205ms
+@repo/ui:build: CJS dist/index.js 1.75 MB
+@repo/ui:build: CJS ⚡️ Build success in 1241ms
+@repo/ui:build: src/components/Tooltip/Tooltip.tsx(22,18): error TS2430: Interface 'TooltipProps' incorrectly extends interface 'Omit<TooltipContentProps & RefAttributes<HTMLDivElement>, "ref">'.
+@repo/ui:build:   Types of property 'content' are incompatible.
+@repo/ui:build:     Type 'ReactNode' is not assignable to type 'string | undefined'.
+@repo/ui:build:       Type 'null' is not assignable to type 'string | undefined'.
+@repo/ui:build: 
+@repo/ui:build: Error: error occurred in dts build
+@repo/ui:build:     at Worker.<anonymous> (/home/runner/cpturbostarter/node_modules/.pnpm/tsup@8.3.5_@swc+core@1.10.1_@swc+helpers@0.5.5__jiti@1.21.7_postcss@8.4.49_typescript@5.4.5_yaml@2.6.1/node_modules/tsup/dist/index.js:1541:26)
+@repo/ui:build:     at Worker.emit (node:events:518:28)
+@repo/ui:build:     at MessagePort.<anonymous> (node:internal/worker:263:53)
+@repo/ui:build:     at [nodejs.internal.kHybridDispatch] (node:internal/event_target:820:20)
+@repo/ui:build:     at MessagePort.<anonymous> (node:internal/per_context/messageport:23:28)
+@repo/ui:build: DTS Build error
+@repo/ui:build:  ELIFECYCLE  Command failed with exit code 1.
+@repo/ui:build: ERROR: command finished with error: command (/home/runner/cpturbostarter/packages/ui) /nix/store/z8s3r4vwf4r26g2d7shnw5lva6ihim8f-pnpm-9.15.0/bin/pnpm run build exited (1)
+@repo/ui#build: command (/home/runner/cpturbostarter/packages/ui) /nix/store/z8s3r4vwf4r26g2d7shnw5lva6ihim8f-pnpm-9.15.0/bin/pnpm run build exited (1)
+
+ Tasks:    0 successful, 1 total
+Cached:    0 cached, 1 total
+  Time:    3.659s 
