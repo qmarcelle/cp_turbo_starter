@@ -1,31 +1,29 @@
-import type { Meta, StoryObj } from "@storybook/react"
-import { Button } from "./Button"
+
+import React from 'react';
+import { Button } from './Button';
+import type { Meta, StoryObj } from '@storybook/react';
 
 const meta: Meta<typeof Button> = {
-  title: "Button",
+  title: 'UI/Button',
   component: Button,
+  parameters: {
+    layout: 'centered',
+  },
+};
+
+export default meta;
+type Story = StoryObj<typeof Button>;
+
+export const Primary: Story = {
   args: {
-    intent: "primary",
-    underline: false,
-    children: "Button",
-    size: "lg",
+    children: 'Button',
+    intent: 'primary',
   },
-  argTypes: {
-    intent: {
-      options: ["primary", "secondary"],
-      control: { type: "select" },
-    },
-    size: {
-      options: ["sm", "lg"],
-      control: { type: "select" },
-    },
+};
+
+export const Secondary: Story = {
+  args: {
+    children: 'Button',
+    intent: 'secondary',
   },
-}
-
-type Story = StoryObj<typeof Button>
-
-export const Default: Story = {
-  render: (args) => <Button {...args} />,
-}
-
-export default meta
+};
