@@ -18,7 +18,7 @@ const tooltipVariants = cva(
   }
 )
 
-export interface TooltipProps {
+export interface TooltipProps extends VariantProps<typeof tooltipVariants> {
   content: React.ReactNode;
   children: React.ReactNode;
   className?: string;
