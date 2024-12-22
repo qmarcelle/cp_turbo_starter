@@ -1,0 +1,10 @@
+
+
+> @repo/storybook@0.0.0 build /home/runner/cpturbostarter/apps/storybook
+> storybook build
+
+[1m@storybook/core v8.4.7
+[22m
+[32minfo[0m[35m[0m => Cleaning outputDir: [36mstorybook-static[39m
+[0m[32minfo[0m[35m[0m => Loading presets
+[0m

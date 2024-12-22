@@ -1,0 +1,21 @@
+
+
+> web@0.0.0 build /home/runner/cpturbostarter/apps/web
+> next build
+
+ [31m[1m⨯[22m[39m Failed to load next.config.mjs, see more info here https://nextjs.org/docs/messages/next-config-error
+
+> Build error occurred
+Error [ERR_MODULE_NOT_FOUND]: Cannot find package 'zod' imported from /home/runner/cpturbostarter/env.mjs
+Did you mean to import "zod/lib/index.js"?
+[90m    at packageResolve (node:internal/modules/esm/resolve:854:9)[39m
+[90m    at moduleResolve (node:internal/modules/esm/resolve:927:18)[39m
+[90m    at defaultResolve (node:internal/modules/esm/resolve:1169:11)[39m
+[90m    at ModuleLoader.defaultResolve (node:internal/modules/esm/loader:542:12)[39m
+[90m    at ModuleLoader.resolve (node:internal/modules/esm/loader:510:25)[39m
+[90m    at ModuleLoader.getModuleJob (node:internal/modules/esm/loader:239:38)[39m
+[90m    at ModuleWrap.<anonymous> (node:internal/modules/esm/module_job:96:40)[39m
+[90m    at link (node:internal/modules/esm/module_job:95:36)[39m {
+  code: [32m'ERR_MODULE_NOT_FOUND'[39m
+}
+[41m[30m ELIFECYCLE [39m[49m [31mCommand failed with exit code 1.[39m
