@@ -12,12 +12,26 @@
     "dev": "turbo run dev",
     "lint": "turbo run lint",
     "test": "turbo run test",
-    "format": "prettier --write \"**/*.{ts,tsx,md}\""
+    "format": "prettier --write \"**/*.{ts,tsx,md}\"",
+    "analyze": "turbo run analyze",
+    "storybook": "turbo run storybook",
+    "test-storybook": "turbo run test-storybook",
+    "build-storybook": "turbo run build-storybook",
+    "e2e:headless": "turbo run e2e:headless",
+    "e2e:ui": "turbo run e2e:ui",
+    "coupling-graph": "turbo run coupling-graph"
   },
   "devDependencies": {
+    "@babel/core": "^7.23.3",
+    "@next/bundle-analyzer": "^14.2.3",
     "@turbo/gen": "^1.12.4",
-    "prettier": "^3.0.3",
-    "turbo": "^1.12.4"
+    "@typescript-eslint/eslint-plugin": "^6.12.0",
+    "@typescript-eslint/parser": "^6.12.0",
+    "eslint": "8.54.0",
+    "eslint-config-prettier": "^9.0.0",
+    "prettier": "3.0.3",
+    "turbo": "^1.12.4",
+    "typescript": "5.4.5"
   },
   "packageManager": "pnpm@8.15.4",
   "engines": {
