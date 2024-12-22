@@ -11,7 +11,7 @@
     "analyze": "ANALYZE=true next build",
     "test": "jest --passWithNoTests",
     "test:e2e": "playwright test",
-  "clean": "del-cli dist/** .next/**",
+    "clean": "del-cli dist/** .next/**",
     "storybook": "storybook dev -p 6006",
     "build-storybook": "storybook build"
   },
@@ -24,7 +24,7 @@
     "@radix-ui/react-dropdown-menu": "^2.0.6",
     "@radix-ui/react-tooltip": "^1.0.7",
     "@repo/ui": "workspace:*",
-    "@t3-oss/env-nextjs": "^0.10.1",
+    "@t3-oss/env-nextjs": "^0.9.0",
     "@vercel/otel": "~1.10.0",
     "class-variance-authority": "^0.7.0",
     "next": "^14.2.21",
