@@ -1,0 +1,41 @@
+Scope: all 3 workspace projects
+ WARN  deprecated eslint@8.54.0: This version is no longer supported. Please see https://eslint.org/version-support for other options.
+apps/web                                 |  WARN  deprecated @storybook/testing-library@0.2.2
+Downloading next@14.2.21: 20.74 MB/20.74 MB, done
+Downloading turbo-linux-64@1.13.4: 9.94 MB/9.94 MB, done
+Downloading @next/swc-linux-x64-musl@14.2.21: 50.27 MB/50.27 MB, done
+Downloading @next/swc-linux-x64-gnu@14.2.21: 41.91 MB/41.91 MB, done
+Downloading @swc/core-linux-x64-gnu@1.10.1: 16.73 MB/16.73 MB, done
+Downloading @swc/core-linux-x64-musl@1.10.1: 20.67 MB/20.67 MB, done
+ WARN  7 deprecated subdependencies found: @humanwhocodes/config-array@0.11.14, @humanwhocodes/object-schema@2.0.3, abab@2.0.6, domexception@4.0.0, glob@7.2.3, inflight@1.0.6, rimraf@3.0.2
+Packages: +1472
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+Progress: resolved 1555, reused 39, downloaded 1432, added 1472, done
+node_modules/.pnpm/core-js-pure@3.39.0/node_modules/core-js-pure: Running postinstall script, done in 91ms
+node_modules/.pnpm/@swc+core@1.10.1_@swc+helpers@0.5.5/node_modules/@swc/core: Running postinstall script, done in 151ms
+node_modules/.pnpm/esbuild@0.24.2/node_modules/esbuild: Running postinstall script, done in 150ms
+node_modules/.pnpm/esbuild@0.18.20/node_modules/esbuild: Running postinstall script, done in 152ms
+node_modules/.pnpm/sharp@0.32.6/node_modules/sharp: Running install script, done in 1.2s
+
+devDependencies:
++ @babel/core 7.26.0
++ @next/bundle-analyzer 14.2.21 (15.1.2 is available)
++ @turbo/gen 1.13.4 (2.3.3 is available)
++ @typescript-eslint/eslint-plugin 6.21.0 (8.18.1 is available)
++ @typescript-eslint/parser 6.21.0 (8.18.1 is available)
++ eslint 8.54.0 (9.17.0 is available) deprecated
++ eslint-config-prettier 9.1.0
++ prettier 3.0.3 (3.4.2 is available)
++ turbo 1.13.4 (2.3.3 is available)
++ typescript 5.4.5 (5.7.2 is available)
+
+ WARN  Issues with peer dependencies found
+apps/web
+└─┬ @vercel/otel 1.10.0
+  ├── ✕ missing peer @opentelemetry/api-logs@">=0.46.0 && <1.0.0"
+  ├── ✕ missing peer @opentelemetry/instrumentation@">=0.46.0 && <1.0.0"
+  └── ✕ missing peer @opentelemetry/sdk-logs@">=0.46.0 && <1.0.0"
+Peer dependencies that should be installed:
+  @opentelemetry/api-logs@">=0.46.0 && <1.0.0"         @opentelemetry/instrumentation@">=0.46.0 && <1.0.0"  @opentelemetry/sdk-logs@">=0.46.0 && <1.0.0"         
+
+Done in 38.7s
