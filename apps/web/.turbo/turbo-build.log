@@ -3,19 +3,16 @@
 > web@0.0.0 build /home/runner/cpturbostarter/apps/web
 > next build
 
- [31m[1m⨯[22m[39m Failed to load next.config.mjs, see more info here https://nextjs.org/docs/messages/next-config-error
+[35m[1mAttention[22m[39m: Next.js now collects completely anonymous telemetry regarding usage.
+This information is used to shape Next.js' roadmap and prioritize features.
+You can learn more, including how to opt-out if you'd not like to participate in this anonymous program, by visiting the following URL:
+[36mhttps://nextjs.org/telemetry[39m
+
 
 > Build error occurred
-Error [ERR_MODULE_NOT_FOUND]: Cannot find package 'zod' imported from /home/runner/cpturbostarter/env.mjs
-Did you mean to import "zod/lib/index.js"?
-[90m    at packageResolve (node:internal/modules/esm/resolve:854:9)[39m
-[90m    at moduleResolve (node:internal/modules/esm/resolve:927:18)[39m
-[90m    at defaultResolve (node:internal/modules/esm/resolve:1169:11)[39m
-[90m    at ModuleLoader.defaultResolve (node:internal/modules/esm/loader:542:12)[39m
-[90m    at ModuleLoader.resolve (node:internal/modules/esm/loader:510:25)[39m
-[90m    at ModuleLoader.getModuleJob (node:internal/modules/esm/loader:239:38)[39m
-[90m    at ModuleWrap.<anonymous> (node:internal/modules/esm/module_job:96:40)[39m
-[90m    at link (node:internal/modules/esm/module_job:95:36)[39m {
-  code: [32m'ERR_MODULE_NOT_FOUND'[39m
-}
+Error: > Couldn't find any `pages` or `app` directory. Please create one under the project root
+    at findPagesDir (/home/runner/cpturbostarter/node_modules/[4m.pnpm[24m/next@14.2.21_@babel+core@7.26.0_@opentelemetry+api@1.7.0_@playwright+test@1.49.1_react-dom@18_5xega2wodfthwlyoanklfw4hka/node_modules/[4mnext[24m/dist/lib/find-pages-dir.js:42:15)
+    at /home/runner/cpturbostarter/node_modules/[4m.pnpm[24m/next@14.2.21_@babel+core@7.26.0_@opentelemetry+api@1.7.0_@playwright+test@1.49.1_react-dom@18_5xega2wodfthwlyoanklfw4hka/node_modules/[4mnext[24m/dist/build/index.js:406:73
+    at async Span.traceAsyncFn (/home/runner/cpturbostarter/node_modules/[4m.pnpm[24m/next@14.2.21_@babel+core@7.26.0_@opentelemetry+api@1.7.0_@playwright+test@1.49.1_react-dom@18_5xega2wodfthwlyoanklfw4hka/node_modules/[4mnext[24m/dist/trace/trace.js:154:20)
+    at async build (/home/runner/cpturbostarter/node_modules/[4m.pnpm[24m/next@14.2.21_@babel+core@7.26.0_@opentelemetry+api@1.7.0_@playwright+test@1.49.1_react-dom@18_5xega2wodfthwlyoanklfw4hka/node_modules/[4mnext[24m/dist/build/index.js:368:9)
 [41m[30m ELIFECYCLE [39m[49m [31mCommand failed with exit code 1.[39m
