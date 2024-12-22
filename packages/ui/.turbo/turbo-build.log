@@ -18,6 +18,33 @@
   You can mark the path "class-variance-authority" as external to exclude it from the bundle, which
   will remove this error and leave the unresolved path in the bundle.
 
+[31m✘ [41;31m[[41;97mERROR[41;31m][0m [1mCould not resolve "@radix-ui/react-tooltip"[0m
+
+    src/components/Tooltip/Tooltip.tsx:3:34:
+[37m      3 │ import * as TooltipPrimitive from [32m"@radix-ui/react-tooltip"[37m
+        ╵                                   [32m~~~~~~~~~~~~~~~~~~~~~~~~~[0m
+
+  You can mark the path "@radix-ui/react-tooltip" as external to exclude it from the bundle, which
+  will remove this error and leave the unresolved path in the bundle.
+
+[31m✘ [41;31m[[41;97mERROR[41;31m][0m [1mCould not resolve "tailwind-merge"[0m
+
+    src/components/Button/Button.tsx:4:24:
+[37m      4 │ import { twMerge } from [32m"tailwind-merge"[37m
+        ╵                         [32m~~~~~~~~~~~~~~~~[0m
+
+  You can mark the path "tailwind-merge" as external to exclude it from the bundle, which will
+  remove this error and leave the unresolved path in the bundle.
+
+[31m✘ [41;31m[[41;97mERROR[41;31m][0m [1mCould not resolve "class-variance-authority"[0m
+
+    src/components/Tooltip/Tooltip.tsx:4:39:
+[37m      4 │ import { cva, type VariantProps } from [32m"class-variance-authority"[37m
+        ╵                                        [32m~~~~~~~~~~~~~~~~~~~~~~~~~~[0m
+
+  You can mark the path "class-variance-authority" as external to exclude it from the bundle, which
+  will remove this error and leave the unresolved path in the bundle.
+
 [31m✘ [41;31m[[41;97mERROR[41;31m][0m [1mCould not resolve "class-variance-authority"[0m
 
     src/components/Button/Button.tsx:2:39:
@@ -36,55 +63,28 @@
   You can mark the path "@radix-ui/react-tooltip" as external to exclude it from the bundle, which
   will remove this error and leave the unresolved path in the bundle.
 
-[31m✘ [41;31m[[41;97mERROR[41;31m][0m [1mCould not resolve "@radix-ui/react-tooltip"[0m
-
-    src/components/Tooltip/Tooltip.tsx:3:34:
-[37m      3 │ import * as TooltipPrimitive from [32m"@radix-ui/react-tooltip"[37m
-        ╵                                   [32m~~~~~~~~~~~~~~~~~~~~~~~~~[0m
-
-  You can mark the path "@radix-ui/react-tooltip" as external to exclude it from the bundle, which
-  will remove this error and leave the unresolved path in the bundle.
-
-[31m✘ [41;31m[[41;97mERROR[41;31m][0m [1mCould not resolve "tailwind-merge"[0m
-
-    src/components/Button/Button.tsx:4:24:
-[37m      4 │ import { twMerge } from [32m"tailwind-merge"[37m
-        ╵                         [32m~~~~~~~~~~~~~~~~[0m
-
-  You can mark the path "tailwind-merge" as external to exclude it from the bundle, which will
-  remove this error and leave the unresolved path in the bundle.
-
-[31m✘ [41;31m[[41;97mERROR[41;31m][0m [1mCould not resolve "class-variance-authority"[0m
-
-    src/components/Tooltip/Tooltip.tsx:4:39:
-[37m      4 │ import { cva, type VariantProps } from [32m"class-variance-authority"[37m
-        ╵                                        [32m~~~~~~~~~~~~~~~~~~~~~~~~~~[0m
-
-  You can mark the path "class-variance-authority" as external to exclude it from the bundle, which
-  will remove this error and leave the unresolved path in the bundle.
-
-[31m✘ [41;31m[[41;97mERROR[41;31m][0m [1mCould not resolve "tailwind-merge"[0m
-
-    src/components/Button/Button.tsx:4:24:
-[37m      4 │ import { twMerge } from [32m"tailwind-merge"[37m
-        ╵                         [32m~~~~~~~~~~~~~~~~[0m
-
-  You can mark the path "tailwind-merge" as external to exclude it from the bundle, which will
-  remove this error and leave the unresolved path in the bundle.
-
-[31m✘ [41;31m[[41;97mERROR[41;31m][0m [1mCould not resolve "class-variance-authority"[0m
-
-    src/components/Tooltip/Tooltip.tsx:4:39:
-[37m      4 │ import { cva, type VariantProps } from [32m"class-variance-authority"[37m
-        ╵                                        [32m~~~~~~~~~~~~~~~~~~~~~~~~~~[0m
-
-  You can mark the path "class-variance-authority" as external to exclude it from the bundle, which
-  will remove this error and leave the unresolved path in the bundle.
-
 [31m✘ [41;31m[[41;97mERROR[41;31m][0m [1mCould not resolve "tailwind-merge"[0m
 
     src/components/Tooltip/Tooltip.tsx:5:24:
 [37m      5 │ import { twMerge } from [32m"tailwind-merge"[37m
+        ╵                         [32m~~~~~~~~~~~~~~~~[0m
+
+  You can mark the path "tailwind-merge" as external to exclude it from the bundle, which will
+  remove this error and leave the unresolved path in the bundle.
+
+[31m✘ [41;31m[[41;97mERROR[41;31m][0m [1mCould not resolve "class-variance-authority"[0m
+
+    src/components/Tooltip/Tooltip.tsx:4:39:
+[37m      4 │ import { cva, type VariantProps } from [32m"class-variance-authority"[37m
+        ╵                                        [32m~~~~~~~~~~~~~~~~~~~~~~~~~~[0m
+
+  You can mark the path "class-variance-authority" as external to exclude it from the bundle, which
+  will remove this error and leave the unresolved path in the bundle.
+
+[31m✘ [41;31m[[41;97mERROR[41;31m][0m [1mCould not resolve "tailwind-merge"[0m
+
+    src/components/Button/Button.tsx:4:24:
+[37m      4 │ import { twMerge } from [32m"tailwind-merge"[37m
         ╵                         [32m~~~~~~~~~~~~~~~~[0m
 
   You can mark the path "tailwind-merge" as external to exclude it from the bundle, which will
@@ -104,6 +104,7 @@
 [1m[33mwarn[39m[22m - Configure your content sources or your generated CSS will be missing styles.
 [1m[33mwarn[39m[22m - https://tailwindcss.com/docs/content-configuration
 DTS Build start
+[31mESM[39m [31mBuild failed[39m
 [31mCJS[39m [31mBuild failed[39m
 [31mError: Build failed with 5 errors:
 src/components/Button/Button.tsx:2:39: ERROR: Could not resolve "class-variance-authority"
@@ -121,7 +122,6 @@ src/components/Tooltip/Tooltip.tsx:5:24: ERROR: Could not resolve "tailwind-merg
     at Socket.readFromStdout (/home/runner/cpturbostarter/node_modules/.pnpm/esbuild@0.24.2/node_modules/esbuild/lib/main.js:600:7)
     at Socket.emit (node:events:518:28)
     at addChunk (node:internal/streams/readable:561:12)[39m
-[31mESM[39m [31mBuild failed[39m
 error TS2688: Cannot find type definition file for '@testing-library/jest-dom'.
   The file is in the program because:
     Entry point of type library '@testing-library/jest-dom' specified in compilerOptions
@@ -134,5 +134,4 @@ error TS2688: Cannot find type definition file for 'node'.
 error TS5074: Option '--incremental' can only be specified using tsconfig, emitting to single file or when option '--tsBuildInfoFile' is specified.
 src/index.ts(4,15): error TS2307: Cannot find module './styles/tailwind.css' or its corresponding type declarations.
 
-DTS Build error
 [41m[30m ELIFECYCLE [39m[49m [31mCommand failed with exit code 1.[39m
