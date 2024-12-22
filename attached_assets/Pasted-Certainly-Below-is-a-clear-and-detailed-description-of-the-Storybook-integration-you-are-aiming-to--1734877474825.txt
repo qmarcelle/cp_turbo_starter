@@ -1,0 +1,121 @@
+Certainly! Below is a clear and detailed description of the Storybook integration you are aiming to achieve, articulated in a way that an LLM (like ChatGPT or similar) can understand and process effectively:
+
+---
+
+### **Storybook Integration Description**
+
+You want to set up a **centralized Storybook application** in a monorepo managed by Turborepo, which aggregates and displays **colocated stories** from multiple packages. The goal is to maintain colocated `.stories.*` files alongside their respective components in the codebase while building and deploying all these stories into a single, unified Storybook instance. Additionally, you want to leverage **Autodocs** (introduced in Storybook v8) to automatically generate documentation pages for your components.
+
+This integration should achieve the following:
+
+1. **Colocated Stories**:
+   - Stories should live next to their respective components within their package directories (e.g., `packages/ui/src/Button.tsx` and `packages/ui/src/Button.stories.tsx`).
+   - This ensures that stories are easy to maintain and stay in sync with the components they document.
+
+2. **Centralized Storybook App**:
+   - A single Storybook app should exist under the `apps/` directory (e.g., `apps/storybook`) in the monorepo.
+   - This app will aggregate all colocated stories across the monorepo into one cohesive Storybook instance.
+
+3. **Autodocs Support**:
+   - Use Storybook v8's **Autodocs** feature to automatically generate documentation pages for components based on their metadata (e.g., props, descriptions, etc.).
+   - Ensure that Autodocs is enabled globally or at the component level using `tags: ["autodocs"]`.
+
+4. **Monorepo-Friendly Configuration**:
+   - The centralized Storybook app should be configured to discover and load stories from all packages in the monorepo using a glob pattern in its `.storybook/main.ts` file (e.g., `"../packages/**/*.stories.@(js|jsx|ts|tsx|mdx)"`).
+   - Shared configurations (e.g., Webpack/Vite settings, TypeScript configs, or addons) should be reusable across packages.
+
+5. **Efficient Builds with Turborepo**:
+   - Leverage Turborepo's caching and task orchestration features to optimize builds for both individual packages and the centralized Storybook app.
+   - Ensure that building the centralized Storybook app only rebuilds what has changed by properly defining dependencies between packages.
+
+6. **Deployment Workflow**:
+   - The centralized Storybook app should be built into a static site (`storybook-static`) for deployment.
+   - This static site can then be deployed to a hosting service like Chromatic, Vercel, Netlify, or any static file server.
+
+7. **Scalability and Extensibility**:
+   - The setup should support adding new packages with colocated stories without requiring significant changes to the centralized Storybook configuration.
+   - It should also allow for future enhancements, such as custom themes or additional addons.
+
+---
+
+### **Technical Implementation Steps**
+
+1. **Directory Structure**:
+   ```
+   monorepo/
+   ├── apps/
+   │   └── storybook/          # Centralized Storybook app
+   ├── packages/
+   │   ├── ui/                 # Example package with colocated stories
+   │   │   ├── src/
+   │   │   │   ├── Button.tsx
+   │   │   │   └── Button.stories.tsx
+   │   │   └── package.json
+   │   └── another-package/    # Another package with colocated stories
+   ```
+
+2. **Storybook Configuration (`apps/storybook/.storybook/main.ts`)**:
+   ```ts
+   module.exports = {
+     stories: ["../../packages/**/*.stories.@(js|jsx|ts|tsx|mdx)"],
+     addons: [
+       "@storybook/addon-essentials",
+       "@storybook/addon-docs",
+     ],
+     framework: "@storybook/react-vite", // Or Webpack depending on your setup
+     docs: {
+       autodocs: true,
+     },
+     viteFinal: async (config) => {
+       // Add custom Vite configuration if needed
+       return config;
+     },
+   };
+   ```
+
+3. **Enable Autodocs Globally (`apps/storybook/.storybook/preview.ts`)**:
+   ```ts
+   export default {
+     tags: ["autodocs"],
+     parameters: {
+       docs: {
+         autodocs: "tag",
+       },
+     },
+   };
+   ```
+
+4. **Shared Dependencies**:
+   - Ensure shared dependencies like `@storybook/react`, `@storybook/addon-docs`, and any build tools (e.g., Vite, Webpack) are installed at the root of your monorepo or properly hoisted by your package manager (e.g., pnpm or Yarn).
+
+5. **Turbo Configuration (`turbo.json`)**:
+   ```json
+   {
+     "pipeline": {
+       "build": {
+         "outputs": ["storybook-static"]
+       },
+       "storybook": {
+         "dependsOn": ["^build"],
+         "outputs": []
+       }
+     }
+   }
+   ```
+
+6. **Deployment**:
+   - Build the centralized Storybook app using `turbo run storybook --filter=apps/storybook`.
+   - Deploy the generated `storybook-static` directory to your preferred hosting provider.
+
+---
+
+### **Summary of Goals**
+- Maintain colocated `.stories.*` files alongside components for better organization.
+- Aggregate all stories into a single centralized Storybook app under `apps/`.
+- Use Autodocs in Storybook v8 to automatically generate documentation pages.
+- Leverage Turborepo for efficient builds and caching.
+- Deploy the centralized Storybook as a static site for team-wide or public use.
+
+This description provides a clear roadmap for implementing your desired integration while ensuring scalability, maintainability, and efficiency in your monorepo setup.
+
+Sources
