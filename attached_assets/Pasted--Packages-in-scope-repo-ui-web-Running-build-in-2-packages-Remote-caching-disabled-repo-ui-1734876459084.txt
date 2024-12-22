@@ -1,0 +1,242 @@
+
+• Packages in scope: @repo/ui, web
+• Running build in 2 packages
+• Remote caching disabled
+@repo/ui:build: cache miss, executing d3413455fcbd95bf
+@repo/ui:build: 
+@repo/ui:build: 
+@repo/ui:build: > @repo/ui@0.0.0 build /home/runner/cpturbostarter/packages/ui
+@repo/ui:build: > tsup src/index.ts --format esm,cjs --dts --external react
+@repo/ui:build: 
+@repo/ui:build: CLI Building entry: src/index.ts
+@repo/ui:build: CLI Using tsconfig: ../../tsconfig.json
+@repo/ui:build: CLI tsup v8.3.5
+@repo/ui:build: CLI Target: es5
+@repo/ui:build: ESM Build start
+@repo/ui:build: CJS Build start
+@repo/ui:build: ✘ [ERROR] Multiple exports with the same name "Button"
+@repo/ui:build: 
+@repo/ui:build:     src/components/Button/Button.tsx:56:13:
+@repo/ui:build:       56 │ export const Button = ({ children, onClick, variant = 'primary' }: ButtonProps) => {
+@repo/ui:build:          ╵              ~~~~~~
+@repo/ui:build: 
+@repo/ui:build:   The name "Button" was originally exported here:
+@repo/ui:build: 
+@repo/ui:build:     src/components/Button/Button.tsx:41:16:
+@repo/ui:build:       41 │ export function Button({ className, intent, size, underline, ...props }: ButtonProps) {
+@repo/ui:build:          ╵                 ~~~~~~
+@repo/ui:build: 
+@repo/ui:build: ✘ [ERROR] The symbol "Button" has already been declared
+@repo/ui:build: 
+@repo/ui:build:     src/components/Button/Button.tsx:56:13:
+@repo/ui:build:       56 │ export const Button = ({ children, onClick, variant = 'primary' }: ButtonProps) => {
+@repo/ui:build:          ╵              ~~~~~~
+@repo/ui:build: 
+@repo/ui:build:   The symbol "Button" was originally declared here:
+@repo/ui:build: 
+@repo/ui:build:     src/components/Button/Button.tsx:41:16:
+@repo/ui:build:       41 │ export function Button({ className, intent, size, underline, ...props }: ButtonProps) {
+@repo/ui:build:          ╵                 ~~~~~~
+@repo/ui:build: 
+@repo/ui:build: ✘ [ERROR] Multiple exports with the same name "Tooltip"
+@repo/ui:build: 
+@repo/ui:build:     src/components/Tooltip/Tooltip.tsx:83:13:
+@repo/ui:build:       83 │ export const Tooltip = ({ children, content }: TooltipProps) => {
+@repo/ui:build:          ╵              ~~~~~~~
+@repo/ui:build: 
+@repo/ui:build:   The name "Tooltip" was originally exported here:
+@repo/ui:build: 
+@repo/ui:build:     src/components/Tooltip/Tooltip.tsx:46:16:
+@repo/ui:build:       46 │ export function Tooltip({
+@repo/ui:build:          ╵                 ~~~~~~~
+@repo/ui:build: 
+@repo/ui:build: ✘ [ERROR] The symbol "Tooltip" has already been declared
+@repo/ui:build: 
+@repo/ui:build:     src/components/Tooltip/Tooltip.tsx:83:13:
+@repo/ui:build:       83 │ export const Tooltip = ({ children, content }: TooltipProps) => {
+@repo/ui:build:          ╵              ~~~~~~~
+@repo/ui:build: 
+@repo/ui:build:   The symbol "Tooltip" was originally declared here:
+@repo/ui:build: 
+@repo/ui:build:     src/components/Tooltip/Tooltip.tsx:46:16:
+@repo/ui:build:       46 │ export function Tooltip({
+@repo/ui:build:          ╵                 ~~~~~~~
+@repo/ui:build: 
+@repo/ui:build: ✘ [ERROR] Multiple exports with the same name "Tooltip"
+@repo/ui:build: 
+@repo/ui:build:     src/components/Tooltip/Tooltip.tsx:83:13:
+@repo/ui:build:       83 │ export const Tooltip = ({ children, content }: TooltipProps) => {
+@repo/ui:build:          ╵              ~~~~~~~
+@repo/ui:build: 
+@repo/ui:build:   The name "Tooltip" was originally exported here:
+@repo/ui:build: 
+@repo/ui:build:     src/components/Tooltip/Tooltip.tsx:46:16:
+@repo/ui:build:       46 │ export function Tooltip({
+@repo/ui:build:          ╵                 ~~~~~~~
+@repo/ui:build: 
+@repo/ui:build: ✘ [ERROR] The symbol "Tooltip" has already been declared
+@repo/ui:build: 
+@repo/ui:build:     src/components/Tooltip/Tooltip.tsx:83:13:
+@repo/ui:build:       83 │ export const Tooltip = ({ children, content }: TooltipProps) => {
+@repo/ui:build:          ╵              ~~~~~~~
+@repo/ui:build: 
+@repo/ui:build:   The symbol "Tooltip" was originally declared here:
+@repo/ui:build: 
+@repo/ui:build:     src/components/Tooltip/Tooltip.tsx:46:16:
+@repo/ui:build:       46 │ export function Tooltip({
+@repo/ui:build:          ╵                 ~~~~~~~
+@repo/ui:build: 
+@repo/ui:build: ✘ [ERROR] Could not resolve "class-variance-authority"
+@repo/ui:build: 
+@repo/ui:build:     src/components/Button/Button.tsx:1:39:
+@repo/ui:build:       1 │ import { cva, type VariantProps } from "class-variance-authority"
+@repo/ui:build:         ╵                                        ~~~~~~~~~~~~~~~~~~~~~~~~~~
+@repo/ui:build: 
+@repo/ui:build:   You can mark the path "class-variance-authority" as external to exclude it from the bundle, which
+@repo/ui:build:   will remove this error and leave the unresolved path in the bundle.
+@repo/ui:build: 
+@repo/ui:build: ✘ [ERROR] Could not resolve "@radix-ui/react-tooltip"
+@repo/ui:build: 
+@repo/ui:build:     src/components/Tooltip/Tooltip.tsx:3:30:
+@repo/ui:build:       3 │ import * as RadixTooltip from "@radix-ui/react-tooltip"
+@repo/ui:build:         ╵                               ~~~~~~~~~~~~~~~~~~~~~~~~~
+@repo/ui:build: 
+@repo/ui:build:   You can mark the path "@radix-ui/react-tooltip" as external to exclude it from the bundle, which
+@repo/ui:build:   will remove this error and leave the unresolved path in the bundle.
+@repo/ui:build: 
+@repo/ui:build: ✘ [ERROR] Multiple exports with the same name "Button"
+@repo/ui:build: 
+@repo/ui:build:     src/components/Button/Button.tsx:56:13:
+@repo/ui:build:       56 │ export const Button = ({ children, onClick, variant = 'primary' }: ButtonProps) => {
+@repo/ui:build:          ╵              ~~~~~~
+@repo/ui:build: 
+@repo/ui:build:   The name "Button" was originally exported here:
+@repo/ui:build: 
+@repo/ui:build:     src/components/Button/Button.tsx:41:16:
+@repo/ui:build:       41 │ export function Button({ className, intent, size, underline, ...props }: ButtonProps) {
+@repo/ui:build:          ╵                 ~~~~~~
+@repo/ui:build: 
+@repo/ui:build: ✘ [ERROR] The symbol "Button" has already been declared
+@repo/ui:build: 
+@repo/ui:build:     src/components/Button/Button.tsx:56:13:
+@repo/ui:build:       56 │ export const Button = ({ children, onClick, variant = 'primary' }: ButtonProps) => {
+@repo/ui:build:          ╵              ~~~~~~
+@repo/ui:build: 
+@repo/ui:build:   The symbol "Button" was originally declared here:
+@repo/ui:build: 
+@repo/ui:build:     src/components/Button/Button.tsx:41:16:
+@repo/ui:build:       41 │ export function Button({ className, intent, size, underline, ...props }: ButtonProps) {
+@repo/ui:build:          ╵                 ~~~~~~
+@repo/ui:build: 
+@repo/ui:build: ✘ [ERROR] Could not resolve "class-variance-authority"
+@repo/ui:build: 
+@repo/ui:build:     src/components/Tooltip/Tooltip.tsx:4:34:
+@repo/ui:build:       4 │ import { cva, VariantProps } from "class-variance-authority"
+@repo/ui:build:         ╵                                   ~~~~~~~~~~~~~~~~~~~~~~~~~~
+@repo/ui:build: 
+@repo/ui:build:   You can mark the path "class-variance-authority" as external to exclude it from the bundle, which
+@repo/ui:build:   will remove this error and leave the unresolved path in the bundle.
+@repo/ui:build: 
+@repo/ui:build: ✘ [ERROR] Could not resolve "tailwind-merge"
+@repo/ui:build: 
+@repo/ui:build:     src/components/Button/Button.tsx:3:24:
+@repo/ui:build:       3 │ import { twMerge } from "tailwind-merge"
+@repo/ui:build:         ╵                         ~~~~~~~~~~~~~~~~
+@repo/ui:build: 
+@repo/ui:build:   You can mark the path "tailwind-merge" as external to exclude it from the bundle, which will
+@repo/ui:build:   remove this error and leave the unresolved path in the bundle.
+@repo/ui:build: 
+@repo/ui:build: ✘ [ERROR] Could not resolve "@radix-ui/react-tooltip"
+@repo/ui:build: 
+@repo/ui:build:     src/components/Tooltip/Tooltip.tsx:3:30:
+@repo/ui:build:       3 │ import * as RadixTooltip from "@radix-ui/react-tooltip"
+@repo/ui:build:         ╵                               ~~~~~~~~~~~~~~~~~~~~~~~~~
+@repo/ui:build: 
+@repo/ui:build:   You can mark the path "@radix-ui/react-tooltip" as external to exclude it from the bundle, which
+@repo/ui:build:   will remove this error and leave the unresolved path in the bundle.
+@repo/ui:build: 
+@repo/ui:build: ✘ [ERROR] Could not resolve "class-variance-authority"
+@repo/ui:build: 
+@repo/ui:build:     src/components/Button/Button.tsx:1:39:
+@repo/ui:build:       1 │ import { cva, type VariantProps } from "class-variance-authority"
+@repo/ui:build:         ╵                                        ~~~~~~~~~~~~~~~~~~~~~~~~~~
+@repo/ui:build: 
+@repo/ui:build:   You can mark the path "class-variance-authority" as external to exclude it from the bundle, which
+@repo/ui:build:   will remove this error and leave the unresolved path in the bundle.
+@repo/ui:build: 
+@repo/ui:build: ✘ [ERROR] Could not resolve "tailwind-merge"
+@repo/ui:build: 
+@repo/ui:build:     src/components/Tooltip/Tooltip.tsx:6:24:
+@repo/ui:build:       6 │ import { twMerge } from "tailwind-merge"
+@repo/ui:build:         ╵                         ~~~~~~~~~~~~~~~~
+@repo/ui:build: 
+@repo/ui:build:   You can mark the path "tailwind-merge" as external to exclude it from the bundle, which will
+@repo/ui:build:   remove this error and leave the unresolved path in the bundle.
+@repo/ui:build: 
+@repo/ui:build: ✘ [ERROR] Could not resolve "tailwind-merge"
+@repo/ui:build: 
+@repo/ui:build:     src/components/Button/Button.tsx:3:24:
+@repo/ui:build:       3 │ import { twMerge } from "tailwind-merge"
+@repo/ui:build:         ╵                         ~~~~~~~~~~~~~~~~
+@repo/ui:build: 
+@repo/ui:build:   You can mark the path "tailwind-merge" as external to exclude it from the bundle, which will
+@repo/ui:build:   remove this error and leave the unresolved path in the bundle.
+@repo/ui:build: 
+@repo/ui:build: ✘ [ERROR] Could not resolve "class-variance-authority"
+@repo/ui:build: 
+@repo/ui:build:     src/components/Tooltip/Tooltip.tsx:4:34:
+@repo/ui:build:       4 │ import { cva, VariantProps } from "class-variance-authority"
+@repo/ui:build:         ╵                                   ~~~~~~~~~~~~~~~~~~~~~~~~~~
+@repo/ui:build: 
+@repo/ui:build:   You can mark the path "class-variance-authority" as external to exclude it from the bundle, which
+@repo/ui:build:   will remove this error and leave the unresolved path in the bundle.
+@repo/ui:build: 
+@repo/ui:build: ✘ [ERROR] Could not resolve "tailwind-merge"
+@repo/ui:build: 
+@repo/ui:build:     src/components/Tooltip/Tooltip.tsx:6:24:
+@repo/ui:build:       6 │ import { twMerge } from "tailwind-merge"
+@repo/ui:build:         ╵                         ~~~~~~~~~~~~~~~~
+@repo/ui:build: 
+@repo/ui:build:   You can mark the path "tailwind-merge" as external to exclude it from the bundle, which will
+@repo/ui:build:   remove this error and leave the unresolved path in the bundle.
+@repo/ui:build: 
+@repo/ui:build: 
+@repo/ui:build: warn - The `content` option in your Tailwind CSS configuration is missing or empty.
+@repo/ui:build: warn - Configure your content sources or your generated CSS will be missing styles.
+@repo/ui:build: warn - https://tailwindcss.com/docs/content-configuration
+@repo/ui:build: DTS Build start
+@repo/ui:build: ESM Build failed
+@repo/ui:build: CJS Build failed
+@repo/ui:build: Error: Build failed with 9 errors:
+@repo/ui:build: src/components/Button/Button.tsx:1:39: ERROR: Could not resolve "class-variance-authority"
+@repo/ui:build: src/components/Button/Button.tsx:3:24: ERROR: Could not resolve "tailwind-merge"
+@repo/ui:build: src/components/Button/Button.tsx:56:13: ERROR: Multiple exports with the same name "Button"
+@repo/ui:build: src/components/Button/Button.tsx:56:13: ERROR: The symbol "Button" has already been declared
+@repo/ui:build: src/components/Tooltip/Tooltip.tsx:3:30: ERROR: Could not resolve "@radix-ui/react-tooltip"
+@repo/ui:build: ...
+@repo/ui:build:     at failureErrorWithLog (/home/runner/cpturbostarter/node_modules/.pnpm/esbuild@0.24.2/node_modules/esbuild/lib/main.js:1476:15)
+@repo/ui:build:     at /home/runner/cpturbostarter/node_modules/.pnpm/esbuild@0.24.2/node_modules/esbuild/lib/main.js:945:25
+@repo/ui:build:     at runOnEndCallbacks (/home/runner/cpturbostarter/node_modules/.pnpm/esbuild@0.24.2/node_modules/esbuild/lib/main.js:1316:45)
+@repo/ui:build:     at buildResponseToResult (/home/runner/cpturbostarter/node_modules/.pnpm/esbuild@0.24.2/node_modules/esbuild/lib/main.js:943:7)
+@repo/ui:build:     at /home/runner/cpturbostarter/node_modules/.pnpm/esbuild@0.24.2/node_modules/esbuild/lib/main.js:970:16
+@repo/ui:build:     at responseCallbacks.<computed> (/home/runner/cpturbostarter/node_modules/.pnpm/esbuild@0.24.2/node_modules/esbuild/lib/main.js:622:9)
+@repo/ui:build:     at handleIncomingPacket (/home/runner/cpturbostarter/node_modules/.pnpm/esbuild@0.24.2/node_modules/esbuild/lib/main.js:677:12)
+@repo/ui:build:     at Socket.readFromStdout (/home/runner/cpturbostarter/node_modules/.pnpm/esbuild@0.24.2/node_modules/esbuild/lib/main.js:600:7)
+@repo/ui:build:     at Socket.emit (node:events:518:28)
+@repo/ui:build:     at addChunk (node:internal/streams/readable:561:12)
+@repo/ui:build: error TS2688: Cannot find type definition file for '@testing-library/jest-dom'.
+@repo/ui:build:   The file is in the program because:
+@repo/ui:build:     Entry point of type library '@testing-library/jest-dom' specified in compilerOptions
+@repo/ui:build: error TS2688: Cannot find type definition file for 'jest'.
+@repo/ui:build:   The file is in the program because:
+@repo/ui:build:     Entry point of type library 'jest' specified in compilerOptions
+@repo/ui:build: error TS2688: Cannot find type definition file for 'node'.
+@repo/ui:build:   The file is in the program because:
+@repo/ui:build:     Entry point of type library 'node' specified in compilerOptions
+@repo/ui:build: error TS5074: Option '--incremental' can only be specified using tsconfig, emitting to single file or when option '--tsBuildInfoFile' is specified.
+@repo/ui:build: src/index.ts(4,15): error TS2307: Cannot find module './styles/tailwind.css' or its corresponding type declarations.
+@repo/ui:build: 
+@repo/ui:build: DTS Build error
+@repo/ui:build:  ELIFECYCLE  Command failed with exit code 1.
+@repo/ui:build: ERROR: command finished with error: command (/home/runner/cpturbostarter/packages/ui) /nix/store/z8s3r4vwf4r26g2d7shnw5lva6ihim8f-pnpm-9.15.0/bin/pnpm run build exited (1)
+@repo/ui#build: command (/home/runner/cpturbostarter/packages/ui) /nix/store/z8s3r4vwf4r26g2d7shnw5lva6ihim8f-pnpm-9.15.0/bin/pnpm run build exited (1)
