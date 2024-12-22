@@ -1,0 +1,27 @@
+web:build: 
+web:build: 
+web:build: > web@0.0.0 build /home/runner/cpturbostarter/apps/web
+web:build: > next build
+web:build: 
+@repo/storybook:build: 
+@repo/storybook:build: > @repo/storybook@0.0.0 build /home/runner/cpturbostarter/apps/storybook
+@repo/storybook:build: > storybook build
+@repo/storybook:build: 
+@repo/storybook:build: @storybook/core v8.4.7
+@repo/storybook:build: 
+@repo/storybook:build: info => Cleaning outputDir: storybook-static
+@repo/storybook:build: info => Loading presets
+web:build: 
+web:build: > Build error occurred
+web:build: Error: > Couldn't find any `pages` or `app` directory. Please create one under the project root
+web:build:     at findPagesDir (/home/runner/cpturbostarter/node_modules/.pnpm/next@14.2.21_@babel+core@7.26.0_@opentelemetry+api@1.7.0_@playwright+test@1.49.1_react-dom@18_5xega2wodfthwlyoanklfw4hka/node_modules/next/dist/lib/find-pages-dir.js:42:15)
+web:build:     at /home/runner/cpturbostarter/node_modules/.pnpm/next@14.2.21_@babel+core@7.26.0_@opentelemetry+api@1.7.0_@playwright+test@1.49.1_react-dom@18_5xega2wodfthwlyoanklfw4hka/node_modules/next/dist/build/index.js:406:73
+web:build:     at async Span.traceAsyncFn (/home/runner/cpturbostarter/node_modules/.pnpm/next@14.2.21_@babel+core@7.26.0_@opentelemetry+api@1.7.0_@playwright+test@1.49.1_react-dom@18_5xega2wodfthwlyoanklfw4hka/node_modules/next/dist/trace/trace.js:154:20)
+web:build:     at async build (/home/runner/cpturbostarter/node_modules/.pnpm/next@14.2.21_@babel+core@7.26.0_@opentelemetry+api@1.7.0_@playwright+test@1.49.1_react-dom@18_5xega2wodfthwlyoanklfw4hka/node_modules/next/dist/build/index.js:368:9)
+web:build:  ELIFECYCLE  Command failed with exit code 1.
+web:build: ERROR: command finished with error: command (/home/runner/cpturbostarter/apps/web) /nix/store/z8s3r4vwf4r26g2d7shnw5lva6ihim8f-pnpm-9.15.0/bin/pnpm run build exited (1)
+@repo/storybook:build: 
+web#build: command (/home/runner/cpturbostarter/apps/web) /nix/store/z8s3r4vwf4r26g2d7shnw5lva6ihim8f-pnpm-9.15.0/bin/pnpm run build exited (1)
+
+ Tasks:    1 successful, 3 total
+Cached:    0 cached, 3 total
