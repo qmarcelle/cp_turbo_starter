@@ -5,7 +5,12 @@
   "pipeline": {
     "build": {
       "dependsOn": ["^build"],
-      "outputs": [".next/**", "!.next/cache/**", "dist/**"]
+      "outputs": [".next/**", "!.next/cache/**", "dist/**", "storybook-static/**"]
+    },
+    "test": {
+      "dependsOn": ["^build"],
+      "inputs": ["src/**/*.tsx", "src/**/*.ts", "test/**/*.ts", "test/**/*.tsx"],
+      "outputs": ["coverage/**"]
     },
     "lint": {
       "outputs": []
@@ -14,20 +19,21 @@
       "cache": false,
       "persistent": true
     },
-    "test": {
-      "dependsOn": ["build"],
-      "inputs": ["src/**/*.tsx", "src/**/*.ts", "test/**/*.ts", "test/**/*.tsx"]
+    "clean": {
+      "cache": false
     },
-    "analyze": {},
     "storybook": {
+      "dependsOn": ["^build"],
+      "cache": false,
       "persistent": true
     },
-    "test-storybook": {},
-    "build-storybook": {
-      "outputs": ["storybook-static/**"]
+    "test-storybook": {
+      "dependsOn": ["storybook"],
+      "outputs": []
     },
-    "e2e:headless": {},
-    "e2e:ui": {},
-    "coupling-graph": {}
+    "build-storybook": {
+      "outputs": ["storybook-static/**"],
+      "dependsOn": ["^build"]
+    }
   }
 }
