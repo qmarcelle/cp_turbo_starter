@@ -3,6 +3,15 @@
   "$schema": "https://turbo.build/schema.json",
   "globalDependencies": [".env"],
   "tasks": {
+    "storybook": {
+      "dependsOn": ["^build"],
+      "cache": false,
+      "persistent": true
+    },
+    "build-storybook": {
+      "outputs": ["storybook-static/**"],
+      "dependsOn": ["^build"]
+    },
     "build": {
       "dependsOn": ["^build"],
       "outputs": [".next/**", "!.next/cache/**", "dist/**", "storybook-static/**"]
