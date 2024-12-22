@@ -10,12 +10,12 @@
 [34mESM[39m Build start
 [34mCJS[39m Build start
 DTS Build start
-[32mESM[39m [1mdist/index.css [22m[32m8.17 KB[39m
-[32mESM[39m [1mdist/index.mjs [22m[32m1.74 MB[39m
-[32mESM[39m ⚡️ Build success in 1449ms
 [32mCJS[39m [1mdist/index.css [22m[32m8.17 KB[39m
 [32mCJS[39m [1mdist/index.js  [22m[32m1.74 MB[39m
-[32mCJS[39m ⚡️ Build success in 1474ms
+[32mCJS[39m ⚡️ Build success in 2959ms
+[32mESM[39m [1mdist/index.css [22m[32m8.17 KB[39m
+[32mESM[39m [1mdist/index.mjs [22m[32m1.74 MB[39m
+[32mESM[39m ⚡️ Build success in 2960ms
 error TS5074: Option '--incremental' can only be specified using tsconfig, emitting to single file or when option '--tsBuildInfoFile' is specified.
 src/index.ts(4,15): error TS2307: Cannot find module './styles/tailwind.css' or its corresponding type declarations.
 
