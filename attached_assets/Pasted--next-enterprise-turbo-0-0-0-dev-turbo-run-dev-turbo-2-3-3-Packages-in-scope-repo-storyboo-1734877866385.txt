@@ -1,0 +1,44 @@
+
+> next-enterprise-turbo@0.0.0 dev
+> turbo run dev
+
+turbo 2.3.3
+
+• Packages in scope: @repo/storybook, @repo/ui, web
+• Running dev in 3 packages
+• Remote caching disabled
+web:dev: cache bypass, force executing 800968c2558d6c25
+@repo/storybook:dev: cache bypass, force executing 9c513c0fc97505d2
+web:dev: 
+web:dev: > web@0.0.0 dev /home/runner/cpturbostarter/apps/web
+web:dev: > next dev
+web:dev: 
+@repo/storybook:dev: 
+@repo/storybook:dev: > @repo/storybook@0.0.0 dev /home/runner/cpturbostarter/apps/storybook
+@repo/storybook:dev: > storybook dev -p 6006
+@repo/storybook:dev: 
+web:dev: node:internal/process/promises:391
+web:dev:     triggerUncaughtException(err, true /* fromPromise */);
+web:dev:     ^
+web:dev: 
+web:dev: Error [ERR_MODULE_NOT_FOUND]: Cannot find package '@t3-oss/env-nextjs' imported from /home/runner/cpturbostarter/env.mjs
+web:dev: Did you mean to import "@t3-oss/env-nextjs/dist/index.js"?
+web:dev:     at packageResolve (node:internal/modules/esm/resolve:854:9)
+web:dev:     at moduleResolve (node:internal/modules/esm/resolve:927:18)
+web:dev:     at defaultResolve (node:internal/modules/esm/resolve:1169:11)
+web:dev:     at ModuleLoader.defaultResolve (node:internal/modules/esm/loader:542:12)
+web:dev:     at ModuleLoader.resolve (node:internal/modules/esm/loader:510:25)
+web:dev:     at ModuleLoader.getModuleJob (node:internal/modules/esm/loader:239:38)
+web:dev:     at ModuleWrap.<anonymous> (node:internal/modules/esm/module_job:96:40)
+web:dev:     at link (node:internal/modules/esm/module_job:95:36) {
+web:dev:   code: 'ERR_MODULE_NOT_FOUND'
+web:dev: }
+web:dev: 
+web:dev: Node.js v20.18.1
+web:dev:  ELIFECYCLE  Command failed with exit code 1.
+web:dev: ERROR: command finished with error: command (/home/runner/cpturbostarter/apps/web) /nix/store/z8s3r4vwf4r26g2d7shnw5lva6ihim8f-pnpm-9.15.0/bin/pnpm run dev exited (1)
+web#dev: command (/home/runner/cpturbostarter/apps/web) /nix/store/z8s3r4vwf4r26g2d7shnw5lva6ihim8f-pnpm-9.15.0/bin/pnpm run dev exited (1)
+
+ Tasks:    0 successful, 2 total
+Cached:    0 cached, 2 total
+  Time:    867ms 
