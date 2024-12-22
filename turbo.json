@@ -17,6 +17,17 @@
     "test": {
       "dependsOn": ["build"],
       "inputs": ["src/**/*.tsx", "src/**/*.ts", "test/**/*.ts", "test/**/*.tsx"]
-    }
+    },
+    "analyze": {},
+    "storybook": {
+      "persistent": true
+    },
+    "test-storybook": {},
+    "build-storybook": {
+      "outputs": ["storybook-static/**"]
+    },
+    "e2e:headless": {},
+    "e2e:ui": {},
+    "coupling-graph": {}
   }
 }
