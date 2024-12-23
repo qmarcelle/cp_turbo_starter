@@ -22,18 +22,24 @@ const button = cva(
   },
 );
 
-export interface ButtonProps extends React.ButtonHTMLAttributes<HTMLButtonElement>, VariantProps<typeof button> {
+export interface ButtonProps 
+  extends React.ButtonHTMLAttributes<HTMLButtonElement>,
+    VariantProps<typeof button> {
   children: React.ReactNode;
 }
 
 export const Button = React.forwardRef<HTMLButtonElement, ButtonProps>(
   ({ className, intent, size, children, ...props }, ref) => {
     return (
-      <button className={button({ intent, size, className })} ref={ref} {...props}>
+      <button 
+        className={button({ intent, size, className })} 
+        ref={ref} 
+        {...props}
+      >
         {children}
       </button>
     );
-  },
+  }
 );
 
 Button.displayName = 'Button';
