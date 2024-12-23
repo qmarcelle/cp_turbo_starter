@@ -7,15 +7,18 @@ function getAbsolutePath(value: string): any {
 }
 
 const config: StorybookConfig = {
-  stories: ["../../../packages/ui/src/**/*.stories.@(js|jsx|ts|tsx)"],
+  stories: ["../../../packages/ui/**/*.stories.@(js|jsx|ts|tsx)"],
   addons: [
-    getAbsolutePath("@storybook/addon-links"),
-    getAbsolutePath("@storybook/addon-essentials"),
-    getAbsolutePath("@storybook/addon-interactions"),
+    "@storybook/addon-links",
+    "@storybook/addon-essentials",
+    "@storybook/addon-interactions",
   ],
   framework: {
-    name: getAbsolutePath("@storybook/react-vite"),
+    name: "@storybook/react-vite",
     options: {}
+  },
+  docs: {
+    autodocs: true
   },
   core: {
     builder: '@storybook/builder-vite'
@@ -30,6 +33,7 @@ const config: StorybookConfig = {
         alias: {
           react: 'react',
           'react-dom': 'react-dom',
+          '@/components': '/packages/ui/src/components'
         },
       },
     };
