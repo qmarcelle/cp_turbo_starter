@@ -15,9 +15,9 @@ const preview: Preview = {
   },
   decorators: [
     (Story) => (
-      <div className="story-wrapper">
+      <React.StrictMode>
         <Story />
-      </div>
+      </React.StrictMode>
     ),
   ],
 };

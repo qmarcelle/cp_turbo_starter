@@ -12,12 +12,13 @@ const config: StorybookConfig = {
     name: "@storybook/react-vite",
     options: {},
   },
-  core: {
-    builder: '@storybook/builder-vite'
-  },
   viteFinal: (config) => {
     return {
       ...config,
+      define: {
+        ...config.define,
+        'process.env': {},
+      },
       resolve: {
         ...config.resolve,
         alias: {
