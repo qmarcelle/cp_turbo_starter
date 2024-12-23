@@ -12,9 +12,22 @@ const config: StorybookConfig = {
     name: "@storybook/react-vite",
     options: {},
   },
-  docs: {
-    autodocs: "tag",
+  core: {
+    builder: '@storybook/builder-vite'
   },
+  viteFinal: (config) => {
+    return {
+      ...config,
+      resolve: {
+        ...config.resolve,
+        alias: {
+          ...config.resolve?.alias,
+          'react': 'react',
+          'react-dom': 'react-dom'
+        }
+      }
+    };
+  }
 };
 
 export default config;
