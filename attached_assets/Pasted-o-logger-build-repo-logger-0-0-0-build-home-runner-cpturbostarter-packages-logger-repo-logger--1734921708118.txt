@@ -1,0 +1,230 @@
+o/logger:build: > @repo/logger@0.0.0 build /home/runner/cpturbostarter/packages/logger
+@repo/logger:build: > tsup src/index.ts --format esm,cjs --dts --external winston
+@repo/logger:build: 
+@repo/ui:build: 
+@repo/ui:build: > @repo/ui@0.0.0 build /home/runner/cpturbostarter/packages/ui
+@repo/ui:build: > tsup src/index.ts --format esm,cjs --dts --external react --no-splitting --inject-style --tsconfig tsconfig.json
+@repo/ui:build: 
+@repo/ui:build: CLI Building entry: src/index.ts
+@repo/ui:build: CLI Using tsconfig: tsconfig.json
+@repo/ui:build: CLI tsup v8.3.5
+@repo/logger:build: CLI Building entry: src/index.ts
+@repo/logger:build: CLI Using tsconfig: ../../tsconfig.json
+@repo/logger:build: CLI tsup v8.3.5
+@repo/ui:build: CLI Target: es5
+@repo/ui:build: ESM Build start
+@repo/ui:build: CJS Build start
+@repo/logger:build: CLI Target: es5
+@repo/logger:build: ESM Build start
+@repo/logger:build: CJS Build start
+@repo/ui:build: ✘ [ERROR] Could not resolve "./components/atoms/PlansLabel/PlansLabel"
+@repo/ui:build: 
+@repo/ui:build:     src/index.ts:4:14:
+@repo/ui:build:       4 │ export * from './components/atoms/PlansLabel/PlansLabel';
+@repo/ui:build:         ╵               ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+@repo/ui:build: 
+@repo/ui:build: ✘ [ERROR] Could not resolve "./components/atoms/ProgressBar/ProgressBar"
+@repo/ui:build: 
+@repo/ui:build:     src/index.ts:5:14:
+@repo/ui:build:       5 │ export * from './components/atoms/ProgressBar/ProgressBar';
+@repo/ui:build:         ╵               ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+@repo/ui:build: 
+@repo/ui:build: ✘ [ERROR] Could not resolve "./components/atoms/PlansLabel/PlansLabel"
+@repo/ui:build: 
+@repo/ui:build:     src/index.ts:4:14:
+@repo/ui:build:       4 │ export * from './components/atoms/PlansLabel/PlansLabel';
+@repo/ui:build:         ╵               ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+@repo/ui:build: 
+@repo/ui:build: ✘ [ERROR] Could not resolve "./components/atoms/QRCode/QRCodeGenerator"
+@repo/ui:build: 
+@repo/ui:build:     src/index.ts:6:14:
+@repo/ui:build:       6 │ export * from './components/atoms/QRCode/QRCodeGenerator';
+@repo/ui:build:         ╵               ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+@repo/ui:build: 
+@repo/ui:build: ✘ [ERROR] Could not resolve "./components/atoms/ProgressBar/ProgressBar"
+@repo/ui:build: 
+@repo/ui:build:     src/index.ts:5:14:
+@repo/ui:build:       5 │ export * from './components/atoms/ProgressBar/ProgressBar';
+@repo/ui:build:         ╵               ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+@repo/ui:build: 
+@repo/ui:build: ✘ [ERROR] Could not resolve "./components/atoms/Radio/Radio"
+@repo/ui:build: 
+@repo/ui:build:     src/index.ts:7:14:
+@repo/ui:build:       7 │ export * from './components/atoms/Radio/Radio';
+@repo/ui:build:         ╵               ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+@repo/ui:build: 
+@repo/ui:build: ✘ [ERROR] Could not resolve "./components/atoms/QRCode/QRCodeGenerator"
+@repo/ui:build: 
+@repo/ui:build:     src/index.ts:6:14:
+@repo/ui:build:       6 │ export * from './components/atoms/QRCode/QRCodeGenerator';
+@repo/ui:build:         ╵               ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+@repo/ui:build: 
+@repo/ui:build: ✘ [ERROR] Could not resolve "./components/molecules/RichDropDown/RichDropDown"
+@repo/ui:build: 
+@repo/ui:build:     src/index.ts:8:14:
+@repo/ui:build:       8 │ export * from './components/molecules/RichDropDown/RichDropDown';
+@repo/ui:build:         ╵               ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+@repo/ui:build: 
+@repo/ui:build: ✘ [ERROR] Could not resolve "./components/atoms/Radio/Radio"
+@repo/ui:build: 
+@repo/ui:build:     src/index.ts:7:14:
+@repo/ui:build:       7 │ export * from './components/atoms/Radio/Radio';
+@repo/ui:build:         ╵               ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+@repo/ui:build: 
+@repo/ui:build: ✘ [ERROR] Could not resolve "./components/molecules/RichDropDown/RichDropDown"
+@repo/ui:build: 
+@repo/ui:build:     src/index.ts:8:14:
+@repo/ui:build:       8 │ export * from './components/molecules/RichDropDown/RichDropDown';
+@repo/ui:build:         ╵               ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+@repo/ui:build: 
+@repo/ui:build: ✘ [ERROR] Could not resolve "./components/atoms/RichText/RichText"
+@repo/ui:build: 
+@repo/ui:build:     src/index.ts:9:14:
+@repo/ui:build:       9 │ export * from './components/atoms/RichText/RichText';
+@repo/ui:build:         ╵               ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+@repo/ui:build: 
+@repo/ui:build: ✘ [ERROR] Could not resolve "./components/atoms/RichText/RichText"
+@repo/ui:build: 
+@repo/ui:build:     src/index.ts:9:14:
+@repo/ui:build:       9 │ export * from './components/atoms/RichText/RichText';
+@repo/ui:build:         ╵               ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+@repo/ui:build: 
+@repo/ui:build: ✘ [ERROR] Could not resolve "./components/atoms/Row/Row"
+@repo/ui:build: 
+@repo/ui:build:     src/index.ts:10:14:
+@repo/ui:build:       10 │ export * from './components/atoms/Row/Row';
+@repo/ui:build:          ╵               ~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+@repo/ui:build: 
+@repo/ui:build: ✘ [ERROR] Could not resolve "./components/atoms/Row/Row"
+@repo/ui:build: 
+@repo/ui:build:     src/index.ts:10:14:
+@repo/ui:build:       10 │ export * from './components/atoms/Row/Row';
+@repo/ui:build:          ╵               ~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+@repo/ui:build: 
+@repo/ui:build: ✘ [ERROR] Could not resolve "./components/atoms/SearchField/SearchField"
+@repo/ui:build: 
+@repo/ui:build:     src/index.ts:11:14:
+@repo/ui:build:       11 │ export * from './components/atoms/SearchField/SearchField';
+@repo/ui:build:          ╵               ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+@repo/ui:build: 
+@repo/ui:build: ✘ [ERROR] Could not resolve "./components/atoms/SearchField/SearchField"
+@repo/ui:build: 
+@repo/ui:build:     src/index.ts:11:14:
+@repo/ui:build:       11 │ export * from './components/atoms/SearchField/SearchField';
+@repo/ui:build:          ╵               ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+@repo/ui:build: 
+@repo/ui:build: ✘ [ERROR] Could not resolve "./components/molecules/SearchTypeAhead/SearchTypeAhead"
+@repo/ui:build: 
+@repo/ui:build:     src/index.ts:12:14:
+@repo/ui:build:       12 │ export * from './components/molecules/SearchTypeAhead/SearchTypeAhead';
+@repo/ui:build:          ╵               ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+@repo/ui:build: 
+@repo/ui:build: ✘ [ERROR] Could not resolve "./components/molecules/SideBarModal/SideBarModal"
+@repo/ui:build: 
+@repo/ui:build:     src/index.ts:13:14:
+@repo/ui:build:       13 │ export * from './components/molecules/SideBarModal/SideBarModal';
+@repo/ui:build:          ╵               ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+@repo/ui:build: 
+@repo/ui:build: ✘ [ERROR] Could not resolve "./components/molecules/SearchTypeAhead/SearchTypeAhead"
+@repo/ui:build: 
+@repo/ui:build:     src/index.ts:12:14:
+@repo/ui:build:       12 │ export * from './components/molecules/SearchTypeAhead/SearchTypeAhead';
+@repo/ui:build:          ╵               ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+@repo/ui:build: 
+@repo/ui:build: ✘ [ERROR] Could not resolve "./components/organisms/SiteHeader/SiteHeader"
+@repo/ui:build: 
+@repo/ui:build:     src/index.ts:14:14:
+@repo/ui:build:       14 │ export * from './components/organisms/SiteHeader/SiteHeader';
+@repo/ui:build:          ╵               ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+@repo/ui:build: 
+@repo/ui:build: ✘ [ERROR] Could not resolve "./components/molecules/SideBarModal/SideBarModal"
+@repo/ui:build: 
+@repo/ui:build:     src/index.ts:13:14:
+@repo/ui:build:       13 │ export * from './components/molecules/SideBarModal/SideBarModal';
+@repo/ui:build:          ╵               ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+@repo/ui:build: 
+@repo/ui:build: ✘ [ERROR] Could not resolve "./components/molecules/SlidingCarousel/SlidingCarousel"
+@repo/ui:build: 
+@repo/ui:build:     src/index.ts:15:14:
+@repo/ui:build:       15 │ export * from './components/molecules/SlidingCarousel/SlidingCarousel';
+@repo/ui:build:          ╵               ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+@repo/ui:build: 
+@repo/ui:build: ✘ [ERROR] Could not resolve "./components/organisms/SiteHeader/SiteHeader"
+@repo/ui:build: 
+@repo/ui:build:     src/index.ts:14:14:
+@repo/ui:build:       14 │ export * from './components/organisms/SiteHeader/SiteHeader';
+@repo/ui:build:          ╵               ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+@repo/ui:build: 
+@repo/ui:build: ✘ [ERROR] Could not resolve "./components/atoms/Spacer/Spacer"
+@repo/ui:build: 
+@repo/ui:build:     src/index.ts:16:14:
+@repo/ui:build:       16 │ export * from './components/atoms/Spacer/Spacer';
+@repo/ui:build:          ╵               ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+@repo/ui:build: 
+@repo/ui:build: ✘ [ERROR] Could not resolve "./components/molecules/SlidingCarousel/SlidingCarousel"
+@repo/ui:build: 
+@repo/ui:build:     src/index.ts:15:14:
+@repo/ui:build:       15 │ export * from './components/molecules/SlidingCarousel/SlidingCarousel';
+@repo/ui:build:          ╵               ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+@repo/ui:build: 
+@repo/ui:build: ✘ [ERROR] Could not resolve "./components/atoms/StatusLabel/StatusLabel"
+@repo/ui:build: 
+@repo/ui:build:     src/index.ts:17:14:
+@repo/ui:build:       17 │ export * from './components/atoms/StatusLabel/StatusLabel';
+@repo/ui:build:          ╵               ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+@repo/ui:build: 
+@repo/ui:build: ✘ [ERROR] Could not resolve "./components/atoms/Spacer/Spacer"
+@repo/ui:build: 
+@repo/ui:build:     src/index.ts:16:14:
+@repo/ui:build:       16 │ export * from './components/atoms/Spacer/Spacer';
+@repo/ui:build:          ╵               ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+@repo/ui:build: 
+@repo/ui:build: ✘ [ERROR] Could not resolve "./components/atoms/StepUpDown/StepUpDown"
+@repo/ui:build: 
+@repo/ui:build:     src/index.ts:18:14:
+@repo/ui:build:       18 │ export * from './components/atoms/StepUpDown/StepUpDown';
+@repo/ui:build:          ╵               ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+@repo/ui:build: 
+@repo/ui:build: ✘ [ERROR] Could not resolve "./components/atoms/StatusLabel/StatusLabel"
+@repo/ui:build: 
+@repo/ui:build:     src/index.ts:17:14:
+@repo/ui:build:       17 │ export * from './components/atoms/StatusLabel/StatusLabel';
+@repo/ui:build:          ╵               ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+@repo/ui:build: 
+@repo/ui:build: ✘ [ERROR] Could not resolve "./components/atoms/StepUpDown/StepUpDown"
+@repo/ui:build: 
+@repo/ui:build:     src/index.ts:18:14:
+@repo/ui:build:       18 │ export * from './components/atoms/StepUpDown/StepUpDown';
+@repo/ui:build:          ╵               ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+@repo/ui:build: 
+@repo/logger:build: ESM dist/index.mjs 4.11 KB
+@repo/logger:build: ESM ⚡️ Build success in 65ms
+@repo/logger:build: CJS dist/index.js 6.36 KB
+@repo/logger:build: CJS ⚡️ Build success in 66ms
+@repo/logger:build: DTS Build start
+@repo/ui:build: 
+@repo/ui:build: warn - Your `content` configuration includes a pattern which looks like it's accidentally matching all of `node_modules` and can cause serious performance issues.
+@repo/ui:build: warn - Pattern: `../../apps/storybook/**/*.js`
+@repo/ui:build: warn - See our documentation for recommendations:
+@repo/ui:build: warn - https://tailwindcss.com/docs/content-configuration#pattern-recommendations
+@repo/ui:build: DTS Build start
+@repo/logger:build: error TS2688: Cannot find type definition file for '@testing-library/jest-dom'.
+@repo/logger:build:   The file is in the program because:
+@repo/logger:build:     Entry point of type library '@testing-library/jest-dom' specified in compilerOptions
+@repo/logger:build: error TS5074: Option '--incremental' can only be specified using tsconfig, emitting to single file or when option '--tsBuildInfoFile' is specified.
+@repo/logger:build: 
+@repo/logger:build: Error: error occurred in dts build
+@repo/logger:build:     at Worker.<anonymous> (/home/runner/cpturbostarter/node_modules/.pnpm/tsup@8.3.5_@swc+core@1.10.1_@swc+helpers@0.5.5__jiti@1.21.7_postcss@8.4.49_typescript@5.4.5_yaml@2.6.1/node_modules/tsup/dist/index.js:1541:26)
+@repo/logger:build:     at Worker.emit (node:events:518:28)
+@repo/logger:build:     at MessagePort.<anonymous> (node:internal/worker:263:53)
+@repo/logger:build:     at [nodejs.internal.kHybridDispatch] (node:internal/event_target:820:20)
+@repo/logger:build:     at MessagePort.<anonymous> (node:internal/per_context/messageport:23:28)
+@repo/logger:build: DTS Build error
+@repo/logger:build:  ELIFECYCLE  Command failed with exit code 1.
+@repo/logger:build: ERROR: command finished with error: command (/home/runner/cpturbostarter/packages/logger) /nix/store/z8s3r4vwf4r26g2d7shnw5lva6ihim8f-pnpm-9.15.0/bin/pnpm run build exited (1)
+@repo/logger#build: command (/home/runner/cpturbostarter/packages/logger) /nix/store/z8s3r4vwf4r26g2d7shnw5lva6ihim8f-pnpm-9.15.0/bin/pnpm run build exited (1)
+
+ Tasks:    0 successful, 2 total
+Cached:    0 cached, 2 total
+  Time:    3.924s 
+Failed:    @repo/logger#build
