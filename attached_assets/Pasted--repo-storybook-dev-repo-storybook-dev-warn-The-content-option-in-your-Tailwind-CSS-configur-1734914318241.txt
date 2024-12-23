@@ -1,0 +1,33 @@
+@repo/storybook:dev: 
+@repo/storybook:dev: warn - The `content` option in your Tailwind CSS configuration is missing or empty.
+@repo/storybook:dev: warn - Configure your content sources or your generated CSS will be missing styles.
+@repo/storybook:dev: warn - https://tailwindcss.com/docs/content-configuration
+@repo/storybook:dev: 
+@repo/storybook:dev: 
+@repo/storybook:dev: 
+12:37:25 AM [vite] Internal server error: Failed to resolve import "@heroicons/react/24/outline" from "../../packages/ui/src/components/molecules/LoginForm/LoginForm.tsx". Does the file exist?
+@repo/storybook:dev:   Plugin: vite:import-analysis
+@repo/storybook:dev:   File: /home/runner/cpturbostarter/packages/ui/src/components/molecules/LoginForm/LoginForm.tsx:5:38
+@repo/storybook:dev:   2  |  import { Input } from "../../atoms/Input/Input";
+@repo/storybook:dev:   3  |  import { Button } from "../../atoms/Button/Button";
+@repo/storybook:dev:   4  |  import { EyeIcon, EyeSlashIcon } from "@heroicons/react/24/outline";
+@repo/storybook:dev:      |                                         ^
+@repo/storybook:dev:   5  |  export const LoginForm = ({ onSubmit, error, isLoading }) => {
+@repo/storybook:dev:   6  |    const [showPassword, setShowPassword] = React.useState(false);
+@repo/storybook:dev:       at TransformPluginContext._formatError (file:///home/runner/cpturbostarter/node_modules/.pnpm/vite@6.0.5_@types+node@22.10.2_jiti@1.21.7_terser@5.37.0_yaml@2.6.1/node_modules/vite/dist/node/chunks/dep-BZMjGe_U.js:47372:41)
+@repo/storybook:dev:       at TransformPluginContext.error (file:///home/runner/cpturbostarter/node_modules/.pnpm/vite@6.0.5_@types+node@22.10.2_jiti@1.21.7_terser@5.37.0_yaml@2.6.1/node_modules/vite/dist/node/chunks/dep-BZMjGe_U.js:47367:16)
+@repo/storybook:dev:       at normalizeUrl (file:///home/runner/cpturbostarter/node_modules/.pnpm/vite@6.0.5_@types+node@22.10.2_jiti@1.21.7_terser@5.37.0_yaml@2.6.1/node_modules/vite/dist/node/chunks/dep-BZMjGe_U.js:45633:23)
+@repo/storybook:dev:       at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+@repo/storybook:dev:       at async file:///home/runner/cpturbostarter/node_modules/.pnpm/vite@6.0.5_@types+node@22.10.2_jiti@1.21.7_terser@5.37.0_yaml@2.6.1/node_modules/vite/dist/node/chunks/dep-BZMjGe_U.js:45752:39
+@repo/storybook:dev:       at async Promise.all (index 3)
+@repo/storybook:dev:       at async TransformPluginContext.transform (file:///home/runner/cpturbostarter/node_modules/.pnpm/vite@6.0.5_@types+node@22.10.2_jiti@1.21.7_terser@5.37.0_yaml@2.6.1/node_modules/vite/dist/node/chunks/dep-BZMjGe_U.js:45679:7)
+@repo/storybook:dev:       at async EnvironmentPluginContainer.transform (file:///home/runner/cpturbostarter/node_modules/.pnpm/vite@6.0.5_@types+node@22.10.2_jiti@1.21.7_terser@5.37.0_yaml@2.6.1/node_modules/vite/dist/node/chunks/dep-BZMjGe_U.js:47214:18)
+@repo/storybook:dev:       at async loadAndTransform (file:///home/runner/cpturbostarter/node_modules/.pnpm/vite@6.0.5_@types+node@22.10.2_jiti@1.21.7_terser@5.37.0_yaml@2.6.1/node_modules/vite/dist/node/chunks/dep-BZMjGe_U.js:41025:27)
+@repo/storybook:dev: 12:37:25 AM [vite] (client) Pre-transform error: Failed to resolve import "@heroicons/react/24/outline" from "../../packages/ui/src/components/molecules/LoginForm/LoginForm.tsx". Does the file exist?
+@repo/storybook:dev:   Plugin: vite:import-analysis
+@repo/storybook:dev:   File: /home/runner/cpturbostarter/packages/ui/src/components/molecules/LoginForm/LoginForm.tsx:5:38
+@repo/storybook:dev:   2  |  import { Input } from "../../atoms/Input/Input";
+@repo/storybook:dev:   3  |  import { Button } from "../../atoms/Button/Button";
+@repo/storybook:dev:   4  |  import { EyeIcon, EyeSlashIcon } from "@heroicons/react/24/outline";
+@repo/storybook:dev:      |                                         ^
+@repo/storybook:dev:   5  |  export const LoginForm = ({ onSubmit, error, isLoading }) => {
