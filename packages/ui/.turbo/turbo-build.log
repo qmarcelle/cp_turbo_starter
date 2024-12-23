@@ -1,197 +1,301 @@
 
 
 > @repo/ui@0.0.0 build /home/runner/cpturbostarter/packages/ui
-> tsup src/index.ts --format esm,cjs --dts --external react --no-splitting --inject-style --tsconfig tsconfig.json
+> tsup src/index.ts src/components/**/index.ts --format esm,cjs --dts --external react
 
-[34mCLI[39m Building entry: src/index.ts
+[34mCLI[39m Building entry: src/index.ts, src/components/atoms/index.ts, src/components/design/index.ts, src/components/molecules/index.ts, src/components/organisms/index.ts, src/components/pages/index.ts
 [34mCLI[39m Using tsconfig: tsconfig.json
 [34mCLI[39m tsup v8.3.5
 [34mCLI[39m Target: es5
 [34mESM[39m Build start
 [34mCJS[39m Build start
-[31m✘ [41;31m[[41;97mERROR[41;31m][0m [1mCould not resolve "./components/atoms/PlansLabel/PlansLabel"[0m
+[31m✘ [41;31m[[41;97mERROR[41;31m][0m [1mCould not resolve "./Typography"[0m
 
-    src/index.ts:4:14:
-[37m      4 │ export * from [32m'./components/atoms/PlansLabel/PlansLabel'[37m;
-        ╵               [32m~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m
+    src/components/design/index.ts:3:14:
+[37m      3 │ export * from [32m'./Typography'[37m;
+        ╵               [32m~~~~~~~~~~~~~~[0m
 
-[31m✘ [41;31m[[41;97mERROR[41;31m][0m [1mCould not resolve "./components/atoms/ProgressBar/ProgressBar"[0m
+[31m✘ [41;31m[[41;97mERROR[41;31m][0m [1mCould not resolve "next/image"[0m
 
-    src/index.ts:5:14:
-[37m      5 │ export * from [32m'./components/atoms/ProgressBar/ProgressBar'[37m;
-        ╵               [32m~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m
+    src/components/organisms/Footer/Footer.tsx:1:18:
+[37m      1 │ import Image from [32m'next/image'[37m;
+        ╵                   [32m~~~~~~~~~~~~[0m
 
-[31m✘ [41;31m[[41;97mERROR[41;31m][0m [1mCould not resolve "./components/atoms/PlansLabel/PlansLabel"[0m
+  You can mark the path "next/image" as external
+  to exclude it from the bundle, which will
+  remove this error and leave the unresolved
+  path in the bundle.
 
-    src/index.ts:4:14:
-[37m      4 │ export * from [32m'./components/atoms/PlansLabel/PlansLabel'[37m;
-        ╵               [32m~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m
+[31m✘ [41;31m[[41;97mERROR[41;31m][0m [1mCould not resolve "./Typography"[0m
 
-[31m✘ [41;31m[[41;97mERROR[41;31m][0m [1mCould not resolve "./components/atoms/QRCode/QRCodeGenerator"[0m
+    src/components/design/index.ts:3:14:
+[37m      3 │ export * from [32m'./Typography'[37m;
+        ╵               [32m~~~~~~~~~~~~~~[0m
 
-    src/index.ts:6:14:
-[37m      6 │ export * from [32m'./components/atoms/QRCode/QRCodeGenerator'[37m;
-        ╵               [32m~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m
+[31m✘ [41;31m[[41;97mERROR[41;31m][0m [1mCould not resolve "next/image"[0m
 
-[31m✘ [41;31m[[41;97mERROR[41;31m][0m [1mCould not resolve "./components/atoms/ProgressBar/ProgressBar"[0m
+    src/components/organisms/Footer/Footer.tsx:1:18:
+[37m      1 │ import Image from [32m'next/image'[37m;
+        ╵                   [32m~~~~~~~~~~~~[0m
 
-    src/index.ts:5:14:
-[37m      5 │ export * from [32m'./components/atoms/ProgressBar/ProgressBar'[37m;
-        ╵               [32m~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m
+  You can mark the path "next/image" as external
+  to exclude it from the bundle, which will
+  remove this error and leave the unresolved
+  path in the bundle.
 
-[31m✘ [41;31m[[41;97mERROR[41;31m][0m [1mCould not resolve "./components/atoms/Radio/Radio"[0m
+[31m✘ [41;31m[[41;97mERROR[41;31m][0m [1mCould not resolve "../../foundation/Row"[0m
+
+    src/components/organisms/Footer/Footer.tsx:2:20:
+[37m      2 │ ... Row } from [32m'../../foundation/Row'[37m;
+        ╵                [32m~~~~~~~~~~~~~~~~~~~~~~[0m
+
+[31m✘ [41;31m[[41;97mERROR[41;31m][0m [1mCould not resolve "../../foundation/Row"[0m
+
+    src/components/organisms/Footer/Footer.tsx:2:20:
+[37m      2 │ ... Row } from [32m'../../foundation/Row'[37m;
+        ╵                [32m~~~~~~~~~~~~~~~~~~~~~~[0m
+
+[31m✘ [41;31m[[41;97mERROR[41;31m][0m [1mCould not resolve "../../foundation/Column"[0m
+
+    src/components/organisms/Footer/Footer.tsx:3:23:
+[37m      3 │ ...n } from [32m'../../foundation/Column'[37m;
+        ╵             [32m~~~~~~~~~~~~~~~~~~~~~~~~~[0m
+
+[31m✘ [41;31m[[41;97mERROR[41;31m][0m [1mCould not resolve "../../foundation/Column"[0m
+
+    src/components/organisms/Footer/Footer.tsx:3:23:
+[37m      3 │ ...n } from [32m'../../foundation/Column'[37m;
+        ╵             [32m~~~~~~~~~~~~~~~~~~~~~~~~~[0m
+
+[31m✘ [41;31m[[41;97mERROR[41;31m][0m [1mCould not resolve "next/image"[0m
+
+    src/components/molecules/Filter/Filter.tsx:1:18:
+[37m      1 │ import Image from [32m'next/image'[37m;
+        ╵                   [32m~~~~~~~~~~~~[0m
+
+  You can mark the path "next/image" as external
+  to exclude it from the bundle, which will
+  remove this error and leave the unresolved
+  path in the bundle.
+
+[31m✘ [41;31m[[41;97mERROR[41;31m][0m [1mCould not resolve "./components/Button"[0m
 
     src/index.ts:7:14:
-[37m      7 │ export * from [32m'./components/atoms/Radio/Radio'[37m;
-        ╵               [32m~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m
+[37m      7 │ export * from [32m'./components/Button'[37m;
+        ╵               [32m~~~~~~~~~~~~~~~~~~~~~[0m
 
-[31m✘ [41;31m[[41;97mERROR[41;31m][0m [1mCould not resolve "./components/atoms/QRCode/QRCodeGenerator"[0m
+[31m✘ [41;31m[[41;97mERROR[41;31m][0m [1mCould not resolve "../../foundation/TextBox"[0m
 
-    src/index.ts:6:14:
-[37m      6 │ export * from [32m'./components/atoms/QRCode/QRCodeGenerator'[37m;
-        ╵               [32m~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m
+    src/components/organisms/Footer/Footer.tsx:4:24:
+[37m      4 │ ... } from [32m'../../foundation/TextBox'[37m;
+        ╵            [32m~~~~~~~~~~~~~~~~~~~~~~~~~~[0m
 
-[31m✘ [41;31m[[41;97mERROR[41;31m][0m [1mCould not resolve "./components/molecules/RichDropDown/RichDropDown"[0m
+[31m✘ [41;31m[[41;97mERROR[41;31m][0m [1mCould not resolve "../../foundation/TextBox"[0m
+
+    src/components/organisms/Footer/Footer.tsx:4:24:
+[37m      4 │ ... } from [32m'../../foundation/TextBox'[37m;
+        ╵            [32m~~~~~~~~~~~~~~~~~~~~~~~~~~[0m
+
+[31m✘ [41;31m[[41;97mERROR[41;31m][0m [1mCould not resolve "next/image"[0m
+
+    src/components/molecules/Filter/Filter.tsx:1:18:
+[37m      1 │ import Image from [32m'next/image'[37m;
+        ╵                   [32m~~~~~~~~~~~~[0m
+
+  You can mark the path "next/image" as external
+  to exclude it from the bundle, which will
+  remove this error and leave the unresolved
+  path in the bundle.
+
+[31m✘ [41;31m[[41;97mERROR[41;31m][0m [1mCould not resolve "./components/Tooltip"[0m
 
     src/index.ts:8:14:
-[37m      8 │ export * from [32m'./components/molecules/RichDropDown/RichDropDown'[37m;
-        ╵               [32m~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m
+[37m      8 │ export * from [32m'./components/Tooltip'[37m;
+        ╵               [32m~~~~~~~~~~~~~~~~~~~~~~[0m
 
-[31m✘ [41;31m[[41;97mERROR[41;31m][0m [1mCould not resolve "./components/atoms/Radio/Radio"[0m
+[31m✘ [41;31m[[41;97mERROR[41;31m][0m [1mCould not resolve "../../foundation/Column"[0m
+
+    src/components/molecules/Filter/Filter.tsx:3:23:
+[37m      3 │ ...n } from [32m'../../foundation/Column'[37m;
+        ╵             [32m~~~~~~~~~~~~~~~~~~~~~~~~~[0m
+
+[31m✘ [41;31m[[41;97mERROR[41;31m][0m [1mCould not resolve "../../foundation/Column"[0m
+
+    src/components/molecules/Filter/Filter.tsx:3:23:
+[37m      3 │ ...n } from [32m'../../foundation/Column'[37m;
+        ╵             [32m~~~~~~~~~~~~~~~~~~~~~~~~~[0m
+
+[31m✘ [41;31m[[41;97mERROR[41;31m][0m [1mCould not resolve "./components/Button"[0m
 
     src/index.ts:7:14:
-[37m      7 │ export * from [32m'./components/atoms/Radio/Radio'[37m;
-        ╵               [32m~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m
+[37m      7 │ export * from [32m'./components/Button'[37m;
+        ╵               [32m~~~~~~~~~~~~~~~~~~~~~[0m
 
-[31m✘ [41;31m[[41;97mERROR[41;31m][0m [1mCould not resolve "./components/molecules/RichDropDown/RichDropDown"[0m
+[31m✘ [41;31m[[41;97mERROR[41;31m][0m [1mCould not resolve "../../foundation/Row"[0m
+
+    src/components/molecules/Filter/Filter.tsx:4:20:
+[37m      4 │ ... Row } from [32m'../../foundation/Row'[37m;
+        ╵                [32m~~~~~~~~~~~~~~~~~~~~~~[0m
+
+[31m✘ [41;31m[[41;97mERROR[41;31m][0m [1mCould not resolve "./components/Tooltip"[0m
 
     src/index.ts:8:14:
-[37m      8 │ export * from [32m'./components/molecules/RichDropDown/RichDropDown'[37m;
-        ╵               [32m~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m
+[37m      8 │ export * from [32m'./components/Tooltip'[37m;
+        ╵               [32m~~~~~~~~~~~~~~~~~~~~~~[0m
 
-[31m✘ [41;31m[[41;97mERROR[41;31m][0m [1mCould not resolve "./components/atoms/RichText/RichText"[0m
+[31m✘ [41;31m[[41;97mERROR[41;31m][0m [1mCould not resolve "../../foundation/Spacer"[0m
 
-    src/index.ts:9:14:
-[37m      9 │ export * from [32m'./components/atoms/RichText/RichText'[37m;
-        ╵               [32m~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m
+    src/components/molecules/Filter/Filter.tsx:5:23:
+[37m      5 │ ...r } from [32m'../../foundation/Spacer'[37m;
+        ╵             [32m~~~~~~~~~~~~~~~~~~~~~~~~~[0m
 
-[31m✘ [41;31m[[41;97mERROR[41;31m][0m [1mCould not resolve "./components/atoms/RichText/RichText"[0m
+[31m✘ [41;31m[[41;97mERROR[41;31m][0m [1mCould not resolve "../../foundation/Row"[0m
 
-    src/index.ts:9:14:
-[37m      9 │ export * from [32m'./components/atoms/RichText/RichText'[37m;
-        ╵               [32m~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m
+    src/components/molecules/Filter/Filter.tsx:4:20:
+[37m      4 │ ... Row } from [32m'../../foundation/Row'[37m;
+        ╵                [32m~~~~~~~~~~~~~~~~~~~~~~[0m
 
-[31m✘ [41;31m[[41;97mERROR[41;31m][0m [1mCould not resolve "./components/atoms/Row/Row"[0m
+[31m✘ [41;31m[[41;97mERROR[41;31m][0m [1mCould not resolve "@radix-ui/react-slot"[0m
 
-    src/index.ts:10:14:
-[37m      10 │ export * from [32m'./components/atoms/Row/Row'[37m;
-         ╵               [32m~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m
+    src/components/atoms/Button/Button.tsx:4:21:
+[37m      4 │ ...Slot } from [32m'@radix-ui/react-slot'[37m;
+        ╵                [32m~~~~~~~~~~~~~~~~~~~~~~[0m
 
-[31m✘ [41;31m[[41;97mERROR[41;31m][0m [1mCould not resolve "./components/atoms/Row/Row"[0m
+  You can mark the path "@radix-ui/react-slot"
+  as external to exclude it from the bundle,
+  which will remove this error and leave the
+  unresolved path in the bundle.
 
-    src/index.ts:10:14:
-[37m      10 │ export * from [32m'./components/atoms/Row/Row'[37m;
-         ╵               [32m~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m
+[31m✘ [41;31m[[41;97mERROR[41;31m][0m [1mCould not resolve "../../foundation/Spacer"[0m
 
-[31m✘ [41;31m[[41;97mERROR[41;31m][0m [1mCould not resolve "./components/atoms/SearchField/SearchField"[0m
+    src/components/molecules/Filter/Filter.tsx:5:23:
+[37m      5 │ ...r } from [32m'../../foundation/Spacer'[37m;
+        ╵             [32m~~~~~~~~~~~~~~~~~~~~~~~~~[0m
 
-    src/index.ts:11:14:
-[37m      11 │ export * from [32m'./components/atoms/SearchField/SearchField'[37m;
-         ╵               [32m~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m
+[31m✘ [41;31m[[41;97mERROR[41;31m][0m [1mCould not resolve "../../foundation/Card"[0m
 
-[31m✘ [41;31m[[41;97mERROR[41;31m][0m [1mCould not resolve "./components/atoms/SearchField/SearchField"[0m
+    src/components/molecules/Filter/Filter.tsx:6:21:
+[37m      6 │ ...ard } from [32m'../../foundation/Card'[37m;
+        ╵               [32m~~~~~~~~~~~~~~~~~~~~~~~[0m
 
-    src/index.ts:11:14:
-[37m      11 │ export * from [32m'./components/atoms/SearchField/SearchField'[37m;
-         ╵               [32m~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m
+[31m✘ [41;31m[[41;97mERROR[41;31m][0m [1mCould not resolve "../../foundation/Header"[0m
 
-[31m✘ [41;31m[[41;97mERROR[41;31m][0m [1mCould not resolve "./components/molecules/SearchTypeAhead/SearchTypeAhead"[0m
+    src/components/molecules/Filter/Filter.tsx:7:23:
+[37m      7 │ ...r } from [32m'../../foundation/Header'[37m;
+        ╵             [32m~~~~~~~~~~~~~~~~~~~~~~~~~[0m
 
-    src/index.ts:12:14:
-[37m      12 │ export * from [32m'./components/molecules/SearchTypeAhead/SearchTypeAhead'[37m;
-         ╵               [32m~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m
+[31m✘ [41;31m[[41;97mERROR[41;31m][0m [1mCould not resolve "../../foundation/Card"[0m
 
-[31m✘ [41;31m[[41;97mERROR[41;31m][0m [1mCould not resolve "./components/molecules/SideBarModal/SideBarModal"[0m
+    src/components/molecules/Filter/Filter.tsx:6:21:
+[37m      6 │ ...ard } from [32m'../../foundation/Card'[37m;
+        ╵               [32m~~~~~~~~~~~~~~~~~~~~~~~[0m
 
-    src/index.ts:13:14:
-[37m      13 │ export * from [32m'./components/molecules/SideBarModal/SideBarModal'[37m;
-         ╵               [32m~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m
+[31m✘ [41;31m[[41;97mERROR[41;31m][0m [1mCould not resolve "@radix-ui/react-slot"[0m
 
-[31m✘ [41;31m[[41;97mERROR[41;31m][0m [1mCould not resolve "./components/molecules/SearchTypeAhead/SearchTypeAhead"[0m
+    src/components/atoms/Button/Button.tsx:4:21:
+[37m      4 │ ...Slot } from [32m'@radix-ui/react-slot'[37m;
+        ╵                [32m~~~~~~~~~~~~~~~~~~~~~~[0m
 
-    src/index.ts:12:14:
-[37m      12 │ export * from [32m'./components/molecules/SearchTypeAhead/SearchTypeAhead'[37m;
-         ╵               [32m~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m
+  You can mark the path "@radix-ui/react-slot"
+  as external to exclude it from the bundle,
+  which will remove this error and leave the
+  unresolved path in the bundle.
 
-[31m✘ [41;31m[[41;97mERROR[41;31m][0m [1mCould not resolve "./components/organisms/SiteHeader/SiteHeader"[0m
+[31m✘ [41;31m[[41;97mERROR[41;31m][0m [1mCould not resolve "../../foundation/TextBox"[0m
 
-    src/index.ts:14:14:
-[37m      14 │ export * from [32m'./components/organisms/SiteHeader/SiteHeader'[37m;
-         ╵               [32m~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m
+    src/components/molecules/Filter/Filter.tsx:8:24:
+[37m      8 │ ... } from [32m'../../foundation/TextBox'[37m;
+        ╵            [32m~~~~~~~~~~~~~~~~~~~~~~~~~~[0m
 
-[31m✘ [41;31m[[41;97mERROR[41;31m][0m [1mCould not resolve "./components/molecules/SideBarModal/SideBarModal"[0m
+[31m✘ [41;31m[[41;97mERROR[41;31m][0m [1mCould not resolve "../../foundation/Header"[0m
 
-    src/index.ts:13:14:
-[37m      13 │ export * from [32m'./components/molecules/SideBarModal/SideBarModal'[37m;
-         ╵               [32m~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m
+    src/components/molecules/Filter/Filter.tsx:7:23:
+[37m      7 │ ...r } from [32m'../../foundation/Header'[37m;
+        ╵             [32m~~~~~~~~~~~~~~~~~~~~~~~~~[0m
 
-[31m✘ [41;31m[[41;97mERROR[41;31m][0m [1mCould not resolve "./components/molecules/SlidingCarousel/SlidingCarousel"[0m
+[31m✘ [41;31m[[41;97mERROR[41;31m][0m [1mCould not resolve "../../foundation/TextBox"[0m
 
-    src/index.ts:15:14:
-[37m      15 │ export * from [32m'./components/molecules/SlidingCarousel/SlidingCarousel'[37m;
-         ╵               [32m~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m
+    src/components/molecules/Filter/Filter.tsx:8:24:
+[37m      8 │ ... } from [32m'../../foundation/TextBox'[37m;
+        ╵            [32m~~~~~~~~~~~~~~~~~~~~~~~~~~[0m
 
-[31m✘ [41;31m[[41;97mERROR[41;31m][0m [1mCould not resolve "./components/organisms/SiteHeader/SiteHeader"[0m
+[31m✘ [41;31m[[41;97mERROR[41;31m][0m [1mCould not resolve "../../atoms/TextField/TextField"[0m
 
-    src/index.ts:14:14:
-[37m      14 │ export * from [32m'./components/organisms/SiteHeader/SiteHeader'[37m;
-         ╵               [32m~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m
+    src/components/molecules/Filter/Filter.tsx:10:26:
+[37m      10 │ ...rom [32m'../../atoms/TextField/Text[37m...
+         ╵        [32m~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m
 
-[31m✘ [41;31m[[41;97mERROR[41;31m][0m [1mCould not resolve "./components/atoms/Spacer/Spacer"[0m
+[31m✘ [41;31m[[41;97mERROR[41;31m][0m [1mCould not resolve "../../foundation/Spacer"[0m
 
-    src/index.ts:16:14:
-[37m      16 │ export * from [32m'./components/atoms/Spacer/Spacer'[37m;
-         ╵               [32m~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m
+    src/components/atoms/ListOrder/ListOrder.tsx:2:23:
+[37m      2 │ ...r } from [32m'../../foundation/Spacer'[37m;
+        ╵             [32m~~~~~~~~~~~~~~~~~~~~~~~~~[0m
 
-[31m✘ [41;31m[[41;97mERROR[41;31m][0m [1mCould not resolve "./components/molecules/SlidingCarousel/SlidingCarousel"[0m
+[31m✘ [41;31m[[41;97mERROR[41;31m][0m [1mCould not resolve "../../foundation/TextBox"[0m
 
-    src/index.ts:15:14:
-[37m      15 │ export * from [32m'./components/molecules/SlidingCarousel/SlidingCarousel'[37m;
-         ╵               [32m~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m
+    src/components/atoms/ListOrder/ListOrder.tsx:3:24:
+[37m      3 │ ... } from [32m'../../foundation/TextBox'[37m;
+        ╵            [32m~~~~~~~~~~~~~~~~~~~~~~~~~~[0m
 
-[31m✘ [41;31m[[41;97mERROR[41;31m][0m [1mCould not resolve "./components/atoms/StatusLabel/StatusLabel"[0m
+[31m✘ [41;31m[[41;97mERROR[41;31m][0m [1mCould not resolve "../../../foundation/Column/Column"[0m
 
-    src/index.ts:17:14:
-[37m      17 │ export * from [32m'./components/atoms/StatusLabel/StatusLabel'[37m;
-         ╵               [32m~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m
+    src/components/atoms/PlansLabel/PlansLabel.tsx:2:23:
+[37m      2 │ ...rom [32m'../../../foundation/Column/[37m...
+        ╵        [32m~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m
 
-[31m✘ [41;31m[[41;97mERROR[41;31m][0m [1mCould not resolve "./components/atoms/Spacer/Spacer"[0m
+[31m✘ [41;31m[[41;97mERROR[41;31m][0m [1mCould not resolve "../../../assets/reset.svg"[0m
 
-    src/index.ts:16:14:
-[37m      16 │ export * from [32m'./components/atoms/Spacer/Spacer'[37m;
-         ╵               [32m~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m
+    src/components/molecules/Filter/Filter.tsx:12:22:
+[37m      12 │ ... from [32m'../../../assets/reset.svg'[37m;
+         ╵          [32m~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m
 
-[31m✘ [41;31m[[41;97mERROR[41;31m][0m [1mCould not resolve "./components/atoms/StepUpDown/StepUpDown"[0m
+[31m✘ [41;31m[[41;97mERROR[41;31m][0m [1mCould not resolve "../../foundation/Spacer"[0m
 
-    src/index.ts:18:14:
-[37m      18 │ export * from [32m'./components/atoms/StepUpDown/StepUpDown'[37m;
-         ╵               [32m~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m
+    src/components/atoms/ListOrder/ListOrder.tsx:2:23:
+[37m      2 │ ...r } from [32m'../../foundation/Spacer'[37m;
+        ╵             [32m~~~~~~~~~~~~~~~~~~~~~~~~~[0m
 
-[31m✘ [41;31m[[41;97mERROR[41;31m][0m [1mCould not resolve "./components/atoms/StatusLabel/StatusLabel"[0m
+[31m✘ [41;31m[[41;97mERROR[41;31m][0m [1mCould not resolve "../../atoms/TextField/TextField"[0m
 
-    src/index.ts:17:14:
-[37m      17 │ export * from [32m'./components/atoms/StatusLabel/StatusLabel'[37m;
-         ╵               [32m~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m
+    src/components/molecules/Filter/Filter.tsx:10:26:
+[37m      10 │ ...rom [32m'../../atoms/TextField/Text[37m...
+         ╵        [32m~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m
 
-[31m✘ [41;31m[[41;97mERROR[41;31m][0m [1mCould not resolve "./components/atoms/StepUpDown/StepUpDown"[0m
+[31m✘ [41;31m[[41;97mERROR[41;31m][0m [1mCould not resolve "../../../foundation/Column/Column"[0m
 
-    src/index.ts:18:14:
-[37m      18 │ export * from [32m'./components/atoms/StepUpDown/StepUpDown'[37m;
-         ╵               [32m~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m
+    src/components/atoms/PlansLabel/PlansLabel.tsx:2:23:
+[37m      2 │ ...rom [32m'../../../foundation/Column/[37m...
+        ╵        [32m~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m
 
+[31m✘ [41;31m[[41;97mERROR[41;31m][0m [1mCould not resolve "../../foundation/TextBox"[0m
 
-[1m[33mwarn[39m[22m - Your `content` configuration includes a pattern which looks like it's accidentally matching all of `node_modules` and can cause serious performance issues.
-[1m[33mwarn[39m[22m - Pattern: `../../apps/storybook/**/*.js`
-[1m[33mwarn[39m[22m - See our documentation for recommendations:
-[1m[33mwarn[39m[22m - https://tailwindcss.com/docs/content-configuration#pattern-recommendations
+    src/components/atoms/ListOrder/ListOrder.tsx:3:24:
+[37m      3 │ ... } from [32m'../../foundation/TextBox'[37m;
+        ╵            [32m~~~~~~~~~~~~~~~~~~~~~~~~~~[0m
+
+[31m✘ [41;31m[[41;97mERROR[41;31m][0m [1mCould not resolve "../../../assets/reset.svg"[0m
+
+    src/components/molecules/Filter/Filter.tsx:12:22:
+[37m      12 │ ... from [32m'../../../assets/reset.svg'[37m;
+         ╵          [32m~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m
+
 DTS Build start
+[31mESM[39m [31mBuild failed[39m
+[31mError: Build failed with 20 errors:
+src/components/atoms/Button/Button.tsx:4:21: ERROR: Could not resolve "@radix-ui/react-slot"
+src/components/atoms/ListOrder/ListOrder.tsx:2:23: ERROR: Could not resolve "../../foundation/Spacer"
+src/components/atoms/ListOrder/ListOrder.tsx:3:24: ERROR: Could not resolve "../../foundation/TextBox"
+src/components/atoms/PlansLabel/PlansLabel.tsx:2:23: ERROR: Could not resolve "../../../foundation/Column/Column"
+src/components/design/index.ts:3:14: ERROR: Could not resolve "./Typography"
+...
+    at failureErrorWithLog (/home/runner/cpturbostarter/node_modules/.pnpm/esbuild@0.24.2/node_modules/esbuild/lib/main.js:1476:15)
+    at /home/runner/cpturbostarter/node_modules/.pnpm/esbuild@0.24.2/node_modules/esbuild/lib/main.js:945:25
+    at runOnEndCallbacks (/home/runner/cpturbostarter/node_modules/.pnpm/esbuild@0.24.2/node_modules/esbuild/lib/main.js:1316:45)
+    at buildResponseToResult (/home/runner/cpturbostarter/node_modules/.pnpm/esbuild@0.24.2/node_modules/esbuild/lib/main.js:943:7)
+    at /home/runner/cpturbostarter/node_modules/.pnpm/esbuild@0.24.2/node_modules/esbuild/lib/main.js:970:16
+    at responseCallbacks.<computed> (/home/runner/cpturbostarter/node_modules/.pnpm/esbuild@0.24.2/node_modules/esbuild/lib/main.js:622:9)
+    at handleIncomingPacket (/home/runner/cpturbostarter/node_modules/.pnpm/esbuild@0.24.2/node_modules/esbuild/lib/main.js:677:12)
+    at Socket.readFromStdout (/home/runner/cpturbostarter/node_modules/.pnpm/esbuild@0.24.2/node_modules/esbuild/lib/main.js:600:7)
+    at Socket.emit (node:events:518:28)
+    at addChunk (node:internal/streams/readable:561:12)[39m
+[31mCJS[39m [31mBuild failed[39m

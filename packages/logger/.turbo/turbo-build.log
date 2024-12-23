@@ -9,11 +9,11 @@
 [34mCLI[39m Target: es5
 [34mESM[39m Build start
 [34mCJS[39m Build start
-[32mESM[39m [1mdist/index.mjs [22m[32m4.11 KB[39m
-[32mESM[39m ⚡️ Build success in 65ms
-[32mCJS[39m [1mdist/index.js [22m[32m6.36 KB[39m
-[32mCJS[39m ⚡️ Build success in 66ms
 DTS Build start
+[32mCJS[39m [1mdist/index.js [22m[32m6.36 KB[39m
+[32mCJS[39m ⚡️ Build success in 1022ms
+[32mESM[39m [1mdist/index.mjs [22m[32m4.11 KB[39m
+[32mESM[39m ⚡️ Build success in 1024ms
 error TS2688: Cannot find type definition file for '@testing-library/jest-dom'.
   The file is in the program because:
     Entry point of type library '@testing-library/jest-dom' specified in compilerOptions
