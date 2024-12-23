@@ -1,6 +1,5 @@
-
 import { ReactNode } from 'react';
-import { Column } from '../../foundation/Column';
+import { Column } from "../../foundation/Column/Column";
 
 export interface CheckboxProps {
   selected?: boolean;
