@@ -1,4 +1,5 @@
 
+import React from 'react';
 import type { Meta, StoryObj } from '@storybook/react';
 import { TypographyDisplay } from './TypographyDisplay';
 
@@ -8,13 +9,15 @@ const meta = {
   parameters: {
     layout: 'padded',
   },
-} as Meta<typeof TypographyDisplay>;
+} satisfies Meta<typeof TypographyDisplay>;
 
 export default meta;
 type Story = StoryObj<typeof meta>;
 
 export const Default: Story = {
-  render: () => <TypographyDisplay showAllStyles={true} />,
+  args: {
+    showAllStyles: true,
+  },
 };
 
 Default.storyName = 'Typography Styles';
