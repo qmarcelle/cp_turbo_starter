@@ -10,9 +10,12 @@ const config: StorybookConfig = {
   ],
   framework: {
     name: "@storybook/react-vite",
-    options: {},
+    options: {}
   },
-  viteFinal: (config) => {
+  core: {
+    builder: '@storybook/builder-vite'
+  },
+  viteFinal: async (config) => {
     return {
       ...config,
       define: {
@@ -25,10 +28,10 @@ const config: StorybookConfig = {
           ...config.resolve?.alias,
           'react': 'react',
           'react-dom': 'react-dom'
-        }
-      }
+        },
+      },
     };
-  }
+  },
 };
 
 export default config;
