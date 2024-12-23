@@ -1,0 +1,311 @@
+ WARNING  stale pid file at "/tmp/turbod/9e9f8d7ab730a97b/turbod.pid"
+• Packages in scope: @repo/auth, @repo/logger, @repo/storybook, @repo/ui, web
+• Running dev in 5 packages
+• Remote caching disabled
+@repo/storybook:dev: cache bypass, force executing a8785403ff7c9019
+@repo/ui:dev: cache bypass, force executing 721d160a35c5b265
+web:dev: cache bypass, force executing 9be72cee0336a6a1
+web:dev: 
+web:dev: > web@0.0.0 dev /home/runner/cpturbostarter/apps/web
+web:dev: > next dev
+web:dev: 
+@repo/ui:dev: 
+@repo/ui:dev: > @repo/ui@0.0.0 dev /home/runner/cpturbostarter/packages/ui
+@repo/ui:dev: > tsup src/index.ts src/components/**/index.ts --format esm,cjs --dts --external react --watch
+@repo/ui:dev: 
+@repo/storybook:dev: 
+@repo/storybook:dev: > @repo/storybook@0.0.0 dev /home/runner/cpturbostarter/apps/storybook
+@repo/storybook:dev: > storybook dev -p 6006
+@repo/storybook:dev: 
+@repo/ui:dev: CLI Building entry: src/index.ts, src/components/atoms/index.ts, src/components/design/index.ts, src/components/molecules/index.ts, src/components/organisms/index.ts, src/components/pages/index.ts
+@repo/ui:dev: CLI Using tsconfig: tsconfig.json
+@repo/ui:dev: CLI tsup v8.3.5
+@repo/ui:dev: CLI Running in watch mode
+@repo/ui:dev: CLI Target: es5
+@repo/ui:dev: ESM Build start
+@repo/ui:dev: CJS Build start
+@repo/ui:dev: ✘ [ERROR] Could not resolve "next/image"
+@repo/ui:dev: 
+@repo/ui:dev:     src/components/organisms/Footer/Footer.tsx:1:18:
+@repo/ui:dev:       1 │ import Image from 'next/image';
+@repo/ui:dev:         ╵                   ~~~~~~~~~~~~
+@repo/ui:dev: 
+@repo/ui:dev:   You can mark the path "next/image" as external to exclude it from the bundle, which will remove
+@repo/ui:dev:   this error and leave the unresolved path in the bundle.
+@repo/ui:dev: 
+@repo/ui:dev: ✘ [ERROR] Could not resolve "../../foundation/Row"
+@repo/ui:dev: 
+@repo/ui:dev:     src/components/organisms/Footer/Footer.tsx:2:20:
+@repo/ui:dev:       2 │ import { Row } from '../../foundation/Row';
+@repo/ui:dev:         ╵                     ~~~~~~~~~~~~~~~~~~~~~~
+@repo/ui:dev: 
+@repo/ui:dev: ✘ [ERROR] Could not resolve "../../foundation/Column"
+@repo/ui:dev: 
+@repo/ui:dev:     src/components/organisms/Footer/Footer.tsx:3:23:
+@repo/ui:dev:       3 │ import { Column } from '../../foundation/Column';
+@repo/ui:dev:         ╵                        ~~~~~~~~~~~~~~~~~~~~~~~~~
+@repo/ui:dev: 
+@repo/ui:dev: ✘ [ERROR] Could not resolve "next/image"
+@repo/ui:dev: 
+@repo/ui:dev:     src/components/organisms/Footer/Footer.tsx:1:18:
+@repo/ui:dev:       1 │ import Image from 'next/image';
+@repo/ui:dev:         ╵                   ~~~~~~~~~~~~
+@repo/ui:dev: 
+@repo/ui:dev:   You can mark the path "next/image" as external to exclude it from the bundle, which will remove
+@repo/ui:dev:   this error and leave the unresolved path in the bundle.
+@repo/ui:dev: 
+@repo/ui:dev: ✘ [ERROR] Could not resolve "../../foundation/TextBox"
+@repo/ui:dev: 
+@repo/ui:dev:     src/components/organisms/Footer/Footer.tsx:4:24:
+@repo/ui:dev:       4 │ import { TextBox } from '../../foundation/TextBox';
+@repo/ui:dev:         ╵                         ~~~~~~~~~~~~~~~~~~~~~~~~~~
+@repo/ui:dev: 
+@repo/ui:dev: ✘ [ERROR] Could not resolve "next/image"
+@repo/ui:dev: 
+@repo/ui:dev:     src/components/molecules/Filter/Filter.tsx:1:18:
+@repo/ui:dev:       1 │ import Image from 'next/image';
+@repo/ui:dev:         ╵                   ~~~~~~~~~~~~
+@repo/ui:dev: 
+@repo/ui:dev:   You can mark the path "next/image" as external to exclude it from the bundle, which will remove
+@repo/ui:dev:   this error and leave the unresolved path in the bundle.
+@repo/ui:dev: 
+@repo/ui:dev: ✘ [ERROR] Could not resolve "./components/Button"
+@repo/ui:dev: 
+@repo/ui:dev:     src/index.ts:7:14:
+@repo/ui:dev:       7 │ export * from './components/Button';
+@repo/ui:dev:         ╵               ~~~~~~~~~~~~~~~~~~~~~
+@repo/ui:dev: 
+@repo/ui:dev: ✘ [ERROR] Could not resolve "../../foundation/Row"
+@repo/ui:dev: 
+@repo/ui:dev:     src/components/organisms/Footer/Footer.tsx:2:20:
+@repo/ui:dev:       2 │ import { Row } from '../../foundation/Row';
+@repo/ui:dev:         ╵                     ~~~~~~~~~~~~~~~~~~~~~~
+@repo/ui:dev: 
+@repo/ui:dev: ✘ [ERROR] Could not resolve "next/image"
+@repo/ui:dev: 
+@repo/ui:dev:     src/components/molecules/Filter/Filter.tsx:1:18:
+@repo/ui:dev:       1 │ import Image from 'next/image';
+@repo/ui:dev:         ╵                   ~~~~~~~~~~~~
+@repo/ui:dev: 
+@repo/ui:dev:   You can mark the path "next/image" as external to exclude it from the bundle, which will remove
+@repo/ui:dev:   this error and leave the unresolved path in the bundle.
+@repo/ui:dev: 
+@repo/ui:dev: ✘ [ERROR] Could not resolve "../../foundation/Column"
+@repo/ui:dev: 
+@repo/ui:dev:     src/components/molecules/Filter/Filter.tsx:3:23:
+@repo/ui:dev:       3 │ import { Column } from '../../foundation/Column';
+@repo/ui:dev:         ╵                        ~~~~~~~~~~~~~~~~~~~~~~~~~
+@repo/ui:dev: 
+@repo/ui:dev: ✘ [ERROR] Could not resolve "./components/Tooltip"
+@repo/ui:dev: 
+@repo/ui:dev:     src/index.ts:8:14:
+@repo/ui:dev:       8 │ export * from './components/Tooltip';
+@repo/ui:dev:         ╵               ~~~~~~~~~~~~~~~~~~~~~~
+@repo/ui:dev: 
+@repo/ui:dev: ✘ [ERROR] Could not resolve "../../foundation/Row"
+@repo/ui:dev: 
+@repo/ui:dev:     src/components/molecules/Filter/Filter.tsx:4:20:
+@repo/ui:dev:       4 │ import { Row } from '../../foundation/Row';
+@repo/ui:dev:         ╵                     ~~~~~~~~~~~~~~~~~~~~~~
+@repo/ui:dev: 
+@repo/ui:dev: ✘ [ERROR] Could not resolve "../../foundation/Spacer"
+@repo/ui:dev: 
+@repo/ui:dev:     src/components/molecules/Filter/Filter.tsx:5:23:
+@repo/ui:dev:       5 │ import { Spacer } from '../../foundation/Spacer';
+@repo/ui:dev:         ╵                        ~~~~~~~~~~~~~~~~~~~~~~~~~
+@repo/ui:dev: 
+@repo/ui:dev: ✘ [ERROR] Could not resolve "@radix-ui/react-slot"
+@repo/ui:dev: 
+@repo/ui:dev:     src/components/atoms/Button/Button.tsx:4:21:
+@repo/ui:dev:       4 │ import { Slot } from '@radix-ui/react-slot';
+@repo/ui:dev:         ╵                      ~~~~~~~~~~~~~~~~~~~~~~
+@repo/ui:dev: 
+@repo/ui:dev:   You can mark the path "@radix-ui/react-slot" as external to exclude it from the bundle, which will
+@repo/ui:dev:   remove this error and leave the unresolved path in the bundle.
+@repo/ui:dev: 
+@repo/ui:dev: ✘ [ERROR] Could not resolve "../../foundation/Card"
+@repo/ui:dev: 
+@repo/ui:dev:     src/components/molecules/Filter/Filter.tsx:6:21:
+@repo/ui:dev:       6 │ import { Card } from '../../foundation/Card';
+@repo/ui:dev:         ╵                      ~~~~~~~~~~~~~~~~~~~~~~~
+@repo/ui:dev: 
+@repo/ui:dev: ✘ [ERROR] Could not resolve "../../foundation/Header"
+@repo/ui:dev: 
+@repo/ui:dev:     src/components/molecules/Filter/Filter.tsx:7:23:
+@repo/ui:dev:       7 │ import { Header } from '../../foundation/Header';
+@repo/ui:dev:         ╵                        ~~~~~~~~~~~~~~~~~~~~~~~~~
+@repo/ui:dev: 
+@repo/ui:dev: ✘ [ERROR] Could not resolve "../../foundation/Column"
+@repo/ui:dev: 
+@repo/ui:dev:     src/components/organisms/Footer/Footer.tsx:3:23:
+@repo/ui:dev:       3 │ import { Column } from '../../foundation/Column';
+@repo/ui:dev:         ╵                        ~~~~~~~~~~~~~~~~~~~~~~~~~
+@repo/ui:dev: 
+@repo/ui:dev: ✘ [ERROR] Could not resolve "../../foundation/Column"
+@repo/ui:dev: 
+@repo/ui:dev:     src/components/molecules/Filter/Filter.tsx:3:23:
+@repo/ui:dev:       3 │ import { Column } from '../../foundation/Column';
+@repo/ui:dev:         ╵                        ~~~~~~~~~~~~~~~~~~~~~~~~~
+@repo/ui:dev: 
+@repo/ui:dev: ✘ [ERROR] Could not resolve "../../foundation/TextBox"
+@repo/ui:dev: 
+@repo/ui:dev:     src/components/molecules/Filter/Filter.tsx:8:24:
+@repo/ui:dev:       8 │ import { TextBox } from '../../foundation/TextBox';
+@repo/ui:dev:         ╵                         ~~~~~~~~~~~~~~~~~~~~~~~~~~
+@repo/ui:dev: 
+@repo/ui:dev: ✘ [ERROR] Could not resolve "../../foundation/Row"
+@repo/ui:dev: 
+@repo/ui:dev:     src/components/molecules/Filter/Filter.tsx:4:20:
+@repo/ui:dev:       4 │ import { Row } from '../../foundation/Row';
+@repo/ui:dev:         ╵                     ~~~~~~~~~~~~~~~~~~~~~~
+@repo/ui:dev: 
+@repo/ui:dev: ✘ [ERROR] Could not resolve "../../foundation/Spacer"
+@repo/ui:dev: 
+@repo/ui:dev:     src/components/molecules/Filter/Filter.tsx:5:23:
+@repo/ui:dev:       5 │ import { Spacer } from '../../foundation/Spacer';
+@repo/ui:dev:         ╵                        ~~~~~~~~~~~~~~~~~~~~~~~~~
+@repo/ui:dev: 
+@repo/ui:dev: ✘ [ERROR] Could not resolve "../../foundation/TextBox"
+@repo/ui:dev: 
+@repo/ui:dev:     src/components/organisms/Footer/Footer.tsx:4:24:
+@repo/ui:dev:       4 │ import { TextBox } from '../../foundation/TextBox';
+@repo/ui:dev:         ╵                         ~~~~~~~~~~~~~~~~~~~~~~~~~~
+@repo/ui:dev: 
+@repo/ui:dev: ✘ [ERROR] Could not resolve "../../foundation/Card"
+@repo/ui:dev: 
+@repo/ui:dev:     src/components/molecules/Filter/Filter.tsx:6:21:
+@repo/ui:dev:       6 │ import { Card } from '../../foundation/Card';
+@repo/ui:dev:         ╵                      ~~~~~~~~~~~~~~~~~~~~~~~
+@repo/ui:dev: 
+@repo/ui:dev: ✘ [ERROR] Could not resolve "./components/Button"
+@repo/ui:dev: 
+@repo/ui:dev:     src/index.ts:7:14:
+@repo/ui:dev:       7 │ export * from './components/Button';
+@repo/ui:dev:         ╵               ~~~~~~~~~~~~~~~~~~~~~
+@repo/ui:dev: 
+@repo/ui:dev: ✘ [ERROR] Could not resolve "../../atoms/TextField/TextField"
+@repo/ui:dev: 
+@repo/ui:dev:     src/components/molecules/Filter/Filter.tsx:10:26:
+@repo/ui:dev:       10 │ import { TextField } from '../../atoms/TextField/TextField';
+@repo/ui:dev:          ╵                           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+@repo/ui:dev: 
+@repo/ui:dev: ✘ [ERROR] Could not resolve "../../foundation/Spacer"
+@repo/ui:dev: 
+@repo/ui:dev:     src/components/atoms/ListOrder/ListOrder.tsx:2:23:
+@repo/ui:dev:       2 │ import { Spacer } from '../../foundation/Spacer';
+@repo/ui:dev:         ╵                        ~~~~~~~~~~~~~~~~~~~~~~~~~
+@repo/ui:dev: 
+@repo/storybook:dev: @storybook/core v8.4.7
+@repo/storybook:dev: 
+@repo/ui:dev: ✘ [ERROR] Could not resolve "@radix-ui/react-slot"
+@repo/ui:dev: 
+@repo/ui:dev:     src/components/atoms/Button/Button.tsx:4:21:
+@repo/ui:dev:       4 │ import { Slot } from '@radix-ui/react-slot';
+@repo/ui:dev:         ╵                      ~~~~~~~~~~~~~~~~~~~~~~
+@repo/ui:dev: 
+@repo/ui:dev:   You can mark the path "@radix-ui/react-slot" as external to exclude it from the bundle, which will
+@repo/ui:dev:   remove this error and leave the unresolved path in the bundle.
+@repo/ui:dev: 
+@repo/ui:dev: ✘ [ERROR] Could not resolve "../../../foundation/Column/Column"
+@repo/ui:dev: 
+@repo/ui:dev:     src/components/atoms/PlansLabel/PlansLabel.tsx:2:23:
+@repo/ui:dev:       2 │ import { Column } from '../../../foundation/Column/Column';
+@repo/ui:dev:         ╵                        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+@repo/ui:dev: 
+@repo/ui:dev: ✘ [ERROR] Could not resolve "../../../assets/reset.svg"
+@repo/ui:dev: 
+@repo/ui:dev:     src/components/molecules/Filter/Filter.tsx:12:22:
+@repo/ui:dev:       12 │ import resetIcon from '../../../assets/reset.svg';
+@repo/ui:dev:          ╵                       ~~~~~~~~~~~~~~~~~~~~~~~~~~~
+@repo/ui:dev: 
+@repo/ui:dev: ✘ [ERROR] Could not resolve "../../foundation/TextBox"
+@repo/ui:dev: 
+@repo/ui:dev:     src/components/atoms/ListOrder/ListOrder.tsx:3:24:
+@repo/ui:dev:       3 │ import { TextBox } from '../../foundation/TextBox';
+@repo/ui:dev:         ╵                         ~~~~~~~~~~~~~~~~~~~~~~~~~~
+@repo/ui:dev: 
+@repo/ui:dev: ✘ [ERROR] Could not resolve "./components/Tooltip"
+@repo/ui:dev: 
+@repo/ui:dev:     src/index.ts:8:14:
+@repo/ui:dev:       8 │ export * from './components/Tooltip';
+@repo/ui:dev:         ╵               ~~~~~~~~~~~~~~~~~~~~~~
+@repo/ui:dev: 
+@repo/ui:dev: ✘ [ERROR] Could not resolve "../../foundation/Header"
+@repo/ui:dev: 
+@repo/ui:dev:     src/components/molecules/Filter/Filter.tsx:7:23:
+@repo/ui:dev:       7 │ import { Header } from '../../foundation/Header';
+@repo/ui:dev:         ╵                        ~~~~~~~~~~~~~~~~~~~~~~~~~
+@repo/ui:dev: 
+@repo/ui:dev: ✘ [ERROR] Could not resolve "../../foundation/Spacer"
+@repo/ui:dev: 
+@repo/ui:dev:     src/components/atoms/ListOrder/ListOrder.tsx:2:23:
+@repo/ui:dev:       2 │ import { Spacer } from '../../foundation/Spacer';
+@repo/ui:dev:         ╵                        ~~~~~~~~~~~~~~~~~~~~~~~~~
+@repo/ui:dev: 
+@repo/ui:dev: ✘ [ERROR] Could not resolve "../../foundation/TextBox"
+@repo/ui:dev: 
+@repo/ui:dev:     src/components/molecules/Filter/Filter.tsx:8:24:
+@repo/ui:dev:       8 │ import { TextBox } from '../../foundation/TextBox';
+@repo/ui:dev:         ╵                         ~~~~~~~~~~~~~~~~~~~~~~~~~~
+@repo/ui:dev: 
+@repo/ui:dev: ✘ [ERROR] Could not resolve "../../../foundation/Column/Column"
+@repo/ui:dev: 
+@repo/ui:dev:     src/components/atoms/PlansLabel/PlansLabel.tsx:2:23:
+@repo/ui:dev:       2 │ import { Column } from '../../../foundation/Column/Column';
+@repo/ui:dev:         ╵                        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+@repo/ui:dev: 
+@repo/ui:dev: ✘ [ERROR] Could not resolve "../../foundation/TextBox"
+@repo/ui:dev: 
+@repo/ui:dev:     src/components/atoms/ListOrder/ListOrder.tsx:3:24:
+@repo/ui:dev:       3 │ import { TextBox } from '../../foundation/TextBox';
+@repo/ui:dev:         ╵                         ~~~~~~~~~~~~~~~~~~~~~~~~~~
+@repo/ui:dev: 
+@repo/ui:dev: ✘ [ERROR] Could not resolve "../../atoms/TextField/TextField"
+@repo/ui:dev: 
+@repo/ui:dev:     src/components/molecules/Filter/Filter.tsx:10:26:
+@repo/ui:dev:       10 │ import { TextField } from '../../atoms/TextField/TextField';
+@repo/ui:dev:          ╵                           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+@repo/ui:dev: 
+@repo/ui:dev: ✘ [ERROR] Could not resolve "../../../assets/reset.svg"
+@repo/ui:dev: 
+@repo/ui:dev:     src/components/molecules/Filter/Filter.tsx:12:22:
+@repo/ui:dev:       12 │ import resetIcon from '../../../assets/reset.svg';
+@repo/ui:dev:          ╵                       ~~~~~~~~~~~~~~~~~~~~~~~~~~~
+@repo/ui:dev: 
+web:dev:   ▲ Next.js 14.2.21
+web:dev:   - Local:        http://localhost:3000
+web:dev:   - Experiments (use with caution):
+web:dev:     · instrumentationHook
+web:dev: 
+web:dev:  ✓ Starting...
+@repo/ui:dev: CJS Build failed
+@repo/ui:dev: Error: Build failed with 19 errors:
+@repo/ui:dev: src/components/atoms/Button/Button.tsx:4:21: ERROR: Could not resolve "@radix-ui/react-slot"
+@repo/ui:dev: src/components/atoms/ListOrder/ListOrder.tsx:2:23: ERROR: Could not resolve "../../foundation/Spacer"
+@repo/ui:dev: src/components/atoms/ListOrder/ListOrder.tsx:3:24: ERROR: Could not resolve "../../foundation/TextBox"
+@repo/ui:dev: src/components/atoms/PlansLabel/PlansLabel.tsx:2:23: ERROR: Could not resolve "../../../foundation/Column/Column"
+@repo/ui:dev: src/components/molecules/Filter/Filter.tsx:1:18: ERROR: Could not resolve "next/image"
+@repo/ui:dev: ...
+@repo/ui:dev:     at failureErrorWithLog (/home/runner/cpturbostarter/node_modules/.pnpm/esbuild@0.24.2/node_modules/esbuild/lib/main.js:1476:15)
+@repo/ui:dev:     at /home/runner/cpturbostarter/node_modules/.pnpm/esbuild@0.24.2/node_modules/esbuild/lib/main.js:945:25
+@repo/ui:dev:     at runOnEndCallbacks (/home/runner/cpturbostarter/node_modules/.pnpm/esbuild@0.24.2/node_modules/esbuild/lib/main.js:1316:45)
+@repo/ui:dev:     at buildResponseToResult (/home/runner/cpturbostarter/node_modules/.pnpm/esbuild@0.24.2/node_modules/esbuild/lib/main.js:943:7)
+@repo/ui:dev:     at /home/runner/cpturbostarter/node_modules/.pnpm/esbuild@0.24.2/node_modules/esbuild/lib/main.js:970:16
+@repo/ui:dev:     at responseCallbacks.<computed> (/home/runner/cpturbostarter/node_modules/.pnpm/esbuild@0.24.2/node_modules/esbuild/lib/main.js:622:9)
+@repo/ui:dev:     at handleIncomingPacket (/home/runner/cpturbostarter/node_modules/.pnpm/esbuild@0.24.2/node_modules/esbuild/lib/main.js:677:12)
+@repo/ui:dev:     at Socket.readFromStdout (/home/runner/cpturbostarter/node_modules/.pnpm/esbuild@0.24.2/node_modules/esbuild/lib/main.js:600:7)
+@repo/ui:dev:     at Socket.emit (node:events:518:28)
+@repo/ui:dev:     at addChunk (node:internal/streams/readable:561:12)
+@repo/ui:dev: DTS Build start
+@repo/ui:dev: ESM Build failed
+@repo/storybook:dev: info => Starting manager..
+@repo/storybook:dev: WARN unable to find package.json for @vitejs/plugin-react
+@repo/storybook:dev: info => Starting preview..
+web:dev:  ✓ Ready in 2.8s
+@repo/storybook:dev: The CJS build of Vite's Node API is deprecated. See https://vite.dev/guide/troubleshooting.html#vite-cjs-node-api-deprecated for more details.
+@repo/storybook:dev: failed to load config from /home/runner/cpturbostarter/apps/storybook/vite.config.ts
+@repo/storybook:dev: => Failed to build the preview
+@repo/storybook:dev: Error: Cannot find module '@vitejs/plugin-react'
+@repo/storybook:dev: Require stack:
+@repo/storybook:dev: - ./vite.config.ts
+@repo/storybook:dev: - /home/runner/cpturbostarter/node_modules/.pnpm/vite@6.0.5_@types+node@22.10.2_jiti@1.21.7_terser@5.37.0_yaml@2.6.1/node_modules/vite/dist/node/chunks/dep-BZMjGe_U.js
