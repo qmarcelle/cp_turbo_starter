@@ -20,24 +20,28 @@ export const LoginForm = ({ onSubmit, error, isLoading }: LoginFormProps) => {
   };
 
   return (
-    <form onSubmit={handleSubmit} className="space-y-4">
-      <Input
-        label="Username"
-        value={values.username}
-        onChange={(e) => setValues({ ...values, username: e.target.value })}
-        autoComplete="username"
-      />
-      <Input
-        label="Password"
-        type={showPassword ? 'text' : 'password'}
-        value={values.password}
-        onChange={(e) => setValues({ ...values, password: e.target.value })}
-        autoComplete="current-password"
-        icon={
+    <form onSubmit={handleSubmit} className="space-y-6 w-full max-w-md mx-auto">
+      <div className="space-y-4">
+        <Input
+          label="Username"
+          value={values.username}
+          onChange={(e) => setValues({ ...values, username: e.target.value })}
+          autoComplete="username"
+          className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary-500 focus:border-transparent"
+        />
+        <div className="relative">
+          <Input
+            label="Password"
+            type={showPassword ? 'text' : 'password'}
+            value={values.password}
+            onChange={(e) => setValues({ ...values, password: e.target.value })}
+            autoComplete="current-password"
+            className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary-500 focus:border-transparent"
+          />
           <button
             type="button"
             onClick={() => setShowPassword(!showPassword)}
-            className="text-gray-400 hover:text-gray-600"
+            className="absolute right-3 top-[38px] text-gray-400 hover:text-gray-600"
           >
             {showPassword ? (
               <EyeSlashIcon className="h-5 w-5" />
@@ -45,25 +49,23 @@ export const LoginForm = ({ onSubmit, error, isLoading }: LoginFormProps) => {
               <EyeIcon className="h-5 w-5" />
             )}
           </button>
-        }
-      />
+        </div>
+      </div>
       {error && (
-        <div className="text-red-500 text-sm flex items-center gap-2">
-          <div className="h-5 w-5 text-red-500">⚠</div>
+        <div className="text-red-500 text-sm flex items-center gap-2 bg-red-50 p-3 rounded-lg">
+          <svg className="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-3L13.732 4c-.77-1.333-2.694-1.333-3.464 0L3.34 16c-.77 1.333.192 3 1.732 3z" />
+          </svg>
           {error}
         </div>
       )}
-      <Button type="submit" fullWidth disabled={isLoading}>
-        {isLoading ? 'Logging in...' : 'Log In'}
+      <Button
+        type="submit"
+        disabled={isLoading}
+        className="w-full bg-primary-600 text-white py-2 px-4 rounded-lg hover:bg-primary-700 transition-colors disabled:opacity-50"
+      >
+        {isLoading ? 'Signing in...' : 'Sign in'}
       </Button>
-      <div className="flex flex-col gap-2 text-center">
-        <Button variant="link" type="button">
-          Forgot Username/Password?
-        </Button>
-        <Button variant="link" type="button">
-          Register a New Account
-        </Button>
-      </div>
     </form>
   );
 };
