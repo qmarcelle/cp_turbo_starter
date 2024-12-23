@@ -3,37 +3,31 @@
   "name": "@repo/ui",
   "version": "0.0.0",
   "private": true,
-  "main": "./src/index.ts",
-  "types": "./src/index.ts",
+  "exports": {
+    ".": "./src/index.ts",
+    "./styles.css": "./src/styles/tailwind.css"
+  },
   "scripts": {
+    "build": "tsup",
+    "dev": "tsup --watch",
     "lint": "eslint src/",
-    "test": "jest",
-    "build": "tsup src/index.ts --format esm,cjs --dts --external react --no-splitting --inject-style --tsconfig tsconfig.json",
-    "clean": "del-cli dist/**"
+    "clean": "rm -rf .turbo && rm -rf node_modules && rm -rf dist"
   },
   "devDependencies": {
+    "@headlessui/react": "^1.7.17",
+    "@heroicons/react": "^2.0.18",
+    "@tailwindcss/forms": "^0.5.7",
     "@types/react": "^18.2.0",
-    "@types/node": "^20.0.0",
-    "@types/react-dom": "^18.2.0",
-    "@types/jest": "^29.5.0",
-    "@testing-library/jest-dom": "^6.1.4",
+    "autoprefixer": "^10.4.16",
     "class-variance-authority": "^0.7.0",
-    "tailwind-merge": "^2.0.0",
-    "@radix-ui/react-tooltip": "^1.0.0",
-    "react": "^18.3.1",
-    "react-dom": "^18.3.1",
-    "tsup": "^8.0.2",
-    "typescript": "^5.4.5",
-    "jest": "^29.7.0",
-    "tailwindcss": "^3.3.5",
-    "qrcode.react": "^3.1.0",
-    "focus-trap-react": "^10.2.3",
-    "react-responsive": "^9.0.2",
-    "react-slick": "^0.30.1",
-    "zustand": "^4.5.0"
+    "clsx": "^2.0.0",
+    "postcss": "^8.4.32",
+    "react": "^18.2.0",
+    "tailwindcss": "^3.3.6",
+    "tsup": "^8.0.1",
+    "typescript": "^5.2.2"
   },
   "peerDependencies": {
-    "react": "^18.0.0",
-    "react-dom": "^18.0.0"
+    "react": "^18.2.0"
   }
 }
