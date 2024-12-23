@@ -1,0 +1,17 @@
+React is not defined
+The component failed to render properly, likely due to a configuration issue in Storybook. Here are some common causes and how you can address them:
+
+Missing Context/Providers: You can use decorators to supply specific contexts or providers, which are sometimes necessary for components to render correctly. For detailed instructions on using decorators, please visit the Decorators documentation.
+Misconfigured Webpack or Vite: Verify that Storybook picks up all necessary settings for loaders, plugins, and other relevant parameters. You can find step-by-step guides for configuring Webpack or Vite with Storybook.
+Missing Environment Variables: Your Storybook may require specific environment variables to function as intended. You can set up custom environment variables as outlined in the Environment Variables documentation.
+ReferenceError: React is not defined
+    at Object.render [as originalStoryFn] (https://bb0439dc-d141-4ad5-8f15-9eca2f61d46a-00-1oo0hpo1uqyti.janeway.replit.dev/@fs/home/runner/cpturbostarter/packages/ui/src/components/design/Typography.stories.tsx:11:39)
+    at undecoratedStoryFn (https://bb0439dc-d141-4ad5-8f15-9eca2f61d46a-00-1oo0hpo1uqyti.janeway.replit.dev/sb-preview/runtime.js:4999:57)
+    at hookified (https://bb0439dc-d141-4ad5-8f15-9eca2f61d46a-00-1oo0hpo1uqyti.janeway.replit.dev/sb-preview/runtime.js:3640:13)
+    at https://bb0439dc-d141-4ad5-8f15-9eca2f61d46a-00-1oo0hpo1uqyti.janeway.replit.dev/sb-preview/runtime.js:4945:8
+    at jsxDecorator (https://bb0439dc-d141-4ad5-8f15-9eca2f61d46a-00-1oo0hpo1uqyti.janeway.replit.dev/node_modules/.cache/storybook/e32bb427adf737087a4b39f7f748149d183fe2f95231b7a3c1529f5231d4c8d3/sb-vite/deps/@storybook_react_dist_entry-preview-docs__mjs.js?v=245eab2b:5711:15)
+    at hookified (https://bb0439dc-d141-4ad5-8f15-9eca2f61d46a-00-1oo0hpo1uqyti.janeway.replit.dev/sb-preview/runtime.js:3640:13)
+    at https://bb0439dc-d141-4ad5-8f15-9eca2f61d46a-00-1oo0hpo1uqyti.janeway.replit.dev/sb-preview/runtime.js:4920:17
+    at https://bb0439dc-d141-4ad5-8f15-9eca2f61d46a-00-1oo0hpo1uqyti.janeway.replit.dev/sb-preview/runtime.js:4945:8
+    at withOutline (https://bb0439dc-d141-4ad5-8f15-9eca2f61d46a-00-1oo0hpo1uqyti.janeway.replit.dev/node_modules/.cache/storybook/e32bb427adf737087a4b39f7f748149d183fe2f95231b7a3c1529f5231d4c8d3/sb-vite/deps/@storybook_addon-essentials_outline_preview.js?v=245eab2b:438:43)
+    at hookified (https://bb0439dc-d141-4ad5-8f15-9eca2f61d46a-00-1oo0hpo1uqyti.janeway.replit.dev/sb-preview/runtime.js:3640:13)
