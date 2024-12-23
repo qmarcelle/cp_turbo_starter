@@ -7,7 +7,7 @@
     "./styles.css": "./src/styles/tailwind.css"
   },
   "scripts": {
-    "build": "tsup src/index.ts src/components/**/index.ts --format esm,cjs --dts --external react",
+    "build": "tsup src/index.ts src/components/**/index.ts --format esm,cjs --dts --external react --external next --external @radix-ui/react-slot",
     "dev": "tsup src/index.ts src/components/**/index.ts --format esm,cjs --dts --external react --watch",
     "lint": "eslint src/",
     "clean": "rm -rf .turbo && rm -rf node_modules && rm -rf dist"
@@ -15,11 +15,13 @@
   "devDependencies": {
     "@headlessui/react": "^1.7.17",
     "@heroicons/react": "^2.0.18",
+    "@radix-ui/react-slot": "^1.0.2",
     "@tailwindcss/forms": "^0.5.7",
     "@types/react": "^18.2.0",
     "autoprefixer": "^10.4.16",
     "class-variance-authority": "^0.7.0",
     "clsx": "^2.0.0",
+    "next": "^14.0.0",
     "postcss": "^8.4.32",
     "react": "^18.2.0",
     "tailwindcss": "^3.3.6",
