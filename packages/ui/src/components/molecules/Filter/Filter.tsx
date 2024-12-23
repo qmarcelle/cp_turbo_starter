@@ -2,12 +2,7 @@ import Image from 'next/image';
 import { useState } from 'react';
 import { Column } from '../../foundation/Column';
 import { Row } from '../../foundation/Row';
-import { Spacer } from '../../foundation/Spacer';
-import { Card } from '../../foundation/Card';
-import { Header } from '../../foundation/Header';
-import { TextBox } from '../../foundation/TextBox';
-import { Button } from '../../atoms/Button/Button';
-import { TextField } from '../../atoms/TextField/TextField';
+import { Input } from '../../atoms/Input/Input';
 import downIcon from '../../../assets/down.svg';
 import resetIcon from '../../../assets/reset.svg';
 
@@ -45,21 +40,21 @@ export const Filter = ({
   const [reset, setReset] = useState(false);
 
   return (
-    <Card className={className}>
+    <div className={className}>
       <Column>
-        <Header className="text-xl font-bold" text={filterHeading} />
-        <Spacer size={32} />
+        <div className="text-xl font-bold">{filterHeading}</div>
+        <div style={{ height: 32 }} />
         {filterItem.map((item, index) => (
           <Column key={index}>
-            <TextBox className="text-sm font-medium" text={item.label} />
-            <Spacer size={8} />
+            <div className="text-sm font-medium">{item.label}</div>
+            <div style={{ height: 8 }} />
             {item.type === 'dropdown' && (
               <div className="relative">
                 {/* Dropdown implementation */}
               </div>
             )}
             {item.type === 'input' && (
-              <TextField
+              <Input
                 value={item.value as string}
                 onChange={(e) => {
                   const newItems = [...filterItem];
@@ -69,7 +64,7 @@ export const Filter = ({
                 }}
               />
             )}
-            <Spacer size={16} />
+            <div style={{ height: 16 }} />
           </Column>
         ))}
         {buttons && (
@@ -92,6 +87,6 @@ export const Filter = ({
           </Row>
         )}
       </Column>
-    </Card>
+    </div>
   );
 };
